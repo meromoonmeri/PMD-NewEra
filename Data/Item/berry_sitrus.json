@@ -1,0 +1,19 @@
+{
+  "Version": "0.7.18.1",
+  "Object": {
+    "$type": "PMDC.Data.ItemData, PMDC",
+    "Name": {
+      "DefaultText": "Sitrus Berry",
+      "LocalTexts": {
+        "fr": "Baie Sitrus"
+      }
+    },
+    "Released": true,
+    "Comment": "A Berry that restores 30 HP when eaten.",
+    "Desc": {
+      "DefaultText": "A Berry that restores 30 HP when eaten.",
+      "LocalTexts": {}
+    },
+    "SortOrder": 892
+  }
+}

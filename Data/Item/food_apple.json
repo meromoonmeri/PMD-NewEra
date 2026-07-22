@@ -1,0 +1,19 @@
+{
+  "Version": "0.7.18.1",
+  "Object": {
+    "$type": "PMDC.Data.ItemData, PMDC",
+    "Name": {
+      "DefaultText": "Apple",
+      "LocalTexts": {
+        "fr": "Pomme"
+      }
+    },
+    "Released": true,
+    "Comment": "A juicy apple that restores 10 HP.",
+    "Desc": {
+      "DefaultText": "A juicy apple that restores 10 HP.",
+      "LocalTexts": {}
+    },
+    "SortOrder": 192
+  }
+}

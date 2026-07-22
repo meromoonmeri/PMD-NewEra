@@ -1,0 +1,19 @@
+{
+  "Version": "0.7.18.1",
+  "Object": {
+    "$type": "PMDC.Data.ItemData, PMDC",
+    "Name": {
+      "DefaultText": "Ancient Recording",
+      "LocalTexts": {
+        "fr": "Enregistrement Ancien"
+      }
+    },
+    "Released": true,
+    "Comment": "A prehistoric recording from the first Collapse. Contains information about the hero's past life and the original sealing.",
+    "Desc": {
+      "DefaultText": "A prehistoric recording from the first Collapse. Contains information about the hero's past life and the original sealing.",
+      "LocalTexts": {}
+    },
+    "SortOrder": 52
+  }
+}

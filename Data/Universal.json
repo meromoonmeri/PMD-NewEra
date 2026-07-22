@@ -1,0 +1,35 @@
+{
+"Version": "0.7.18.1",
+"Object": {
+"$type": "RogueEssence.Data.UniversalData, RogueEssence",
+"StarterChoices": [
+"bulbasaur", "charmander", "squirtle", "pikachu", "vulpix",
+"meowth", "psyduck", "growlithe", "abra", "machop",
+"totodile", "chikorita", "cyndaquil", "treecko", "torchic",
+"mudkip", "piplup", "chimchar", "turtwig", "riolu",
+"snivy", "tepig", "oshawott", "axew", "zorua",
+"chespin", "fennekin", "froakie", "sylveon", "rockruff",
+"grookey", "scorbunny", "sobble", "toxel", "wooloo",
+"rowlet", "popplio", "litten", "lucario", "espeon",
+"umbreon", "eevee", "shinx", "sewaddle", "sandile",
+"voltorb", "cubone", "phanpy", "espurr", "yamper",
+"charcadet"
+],
+"MaxTeamSize": 4,
+"MaxStoredTeams": 16,
+"MaxInventory": 48,
+"MaxMoney": 99999,
+"DefaultExpTable": "medium_fast",
+"DefaultGroundMap": "new_era_city",
+"DefaultStartMap": "misty_reach_forest",
+"DefaultZone": "ch1_misty_reach_forest",
+"RescueEnabled": true,
+"AutoSaveEnabled": true,
+"FriendshipEvolutionEnabled": true,
+"RecruitmentEnabled": true,
+"MenuTitle": "PMD: New Era",
+"SubTitle": "The Collapse",
+"VersionText": "v1.0.0",
+"DebugEnabled": false
+}
+}

@@ -1,0 +1,19 @@
+{
+  "Version": "0.7.18.1",
+  "Object": {
+    "$type": "PMDC.Data.ItemData, PMDC",
+    "Name": {
+      "DefaultText": "Freeze Seed",
+      "LocalTexts": {
+        "fr": "Graine Glace"
+      }
+    },
+    "Released": true,
+    "Comment": "Freezes an enemy when thrown.",
+    "Desc": {
+      "DefaultText": "Freezes an enemy when thrown.",
+      "LocalTexts": {}
+    },
+    "SortOrder": 36
+  }
+}

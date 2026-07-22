@@ -1,0 +1,19 @@
+{
+  "Version": "0.7.18.1",
+  "Object": {
+    "$type": "PMDC.Data.ItemData, PMDC",
+    "Name": {
+      "DefaultText": "Guardian Seal",
+      "LocalTexts": {
+        "fr": "Sceau Gardien"
+      }
+    },
+    "Released": true,
+    "Comment": "A seal placed by the ancient Claydol guardian. Protects against dimensional distortion.",
+    "Desc": {
+      "DefaultText": "A seal placed by the ancient Claydol guardian. Protects against dimensional distortion.",
+      "LocalTexts": {}
+    },
+    "SortOrder": 438
+  }
+}

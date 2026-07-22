@@ -1,0 +1,74 @@
+{
+  "Version": "0.7.18.1",
+  "Object": {
+    "$type": "RogueEssence.Data.MonsterData, RogueEssence",
+    "Name": {
+      "DefaultText": "Tyrogue",
+      "LocalTexts": {}
+    },
+    "Released": true,
+    "Comment": "Gen 2 Fighting starter",
+    "Title": {
+      "DefaultText": "",
+      "LocalTexts": {}
+    },
+    "IndexNum": 236,
+    "EXPTable": "medium_slow",
+    "SkillGroup1": "undiscovered",
+    "SkillGroup2": "amorphous",
+    "JoinRate": -1,
+    "PromoteFrom": "",
+    "Promotions": [],
+    "Forms": [
+      {
+        "$type": "PMDC.Data.MonsterFormData, PMDC",
+        "Released": true,
+        "Generation": 2,
+        "GenderlessWeight": 0,
+        "MaleWeight": 7,
+        "FemaleWeight": 1,
+        "BaseHP": 35,
+        "BaseAtk": 35,
+        "BaseDef": 35,
+        "BaseMAtk": 35,
+        "BaseMDef": 35,
+        "BaseSpeed": 35,
+        "ExpYield": 42,
+        "Height": 0.5,
+        "Weight": 10.0,
+        "Personalities": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "TeachSkills": [],
+        "SharedSkills": [],
+        "SecretSkills": [],
+        "FormName": {
+          "DefaultText": "Tyrogue",
+          "LocalTexts": {}
+        },
+        "Temporary": false,
+        "Element1": "fighting",
+        "Element2": "none",
+        "Intrinsic1": "guts",
+        "Intrinsic2": "none",
+        "Intrinsic3": "none",
+        "LevelSkills": []
+      }
+    ]
+  }
+}

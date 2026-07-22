@@ -1,0 +1,19 @@
+{
+  "Version": "0.7.18.1",
+  "Object": {
+    "$type": "PMDC.Data.ItemData, PMDC",
+    "Name": {
+      "DefaultText": "Slumber Orb",
+      "LocalTexts": {
+        "fr": "Orbe Sommeil"
+      }
+    },
+    "Released": true,
+    "Comment": "Puts all enemies on the floor to sleep.",
+    "Desc": {
+      "DefaultText": "Puts all enemies on the floor to sleep.",
+      "LocalTexts": {}
+    },
+    "SortOrder": 928
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "Version": "0.7.18.1",
+  "Object": {
+    "$type": "PMDC.Data.ItemData, PMDC",
+    "Name": {
+      "DefaultText": "Space Pearl",
+      "LocalTexts": {
+        "fr": "Perle Spatiale"
+      }
+    },
+    "Released": true,
+    "Comment": "A fragment of Palkia's power. Allows manipulation of spatial dimensions. Gifted by Palkia in the Space Between.",
+    "Desc": {
+      "DefaultText": "A fragment of Palkia's power. Allows manipulation of spatial dimensions. Gifted by Palkia in the Space Between.",
+      "LocalTexts": {}
+    },
+    "SortOrder": 12
+  }
+}

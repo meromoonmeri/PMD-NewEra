@@ -1,0 +1,30 @@
+{
+"Version": "0.7.17.0",
+"Object": {
+"$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[RogueEssence.Data.EntrySummary, RogueEssence]], System.Private.CoreLib",
+"new_era_city": {
+"$type": "RogueEssence.Data.ZoneEntrySummary, RogueEssence",
+"NoEXP": false, "Level": -1, "LevelCap": false, "KeepSkills": false,
+"TeamRestrict": false, "TeamSize": -1, "MoneyRestrict": false,
+"BagRestrict": -1, "BagSize": -1, "Rescues": 0, "CountedFloors": 0, "Rogue": 0,
+"Grounds": ["new_era_city", "guild_hall", "guild_heros_room", "guild_dining_room", "cafe", "hospital", "library", "dojo", "park", "bank", "market", "fortune_parlor", "residential"],
+"Maps": [[0]],
+"Name": {"DefaultText": "New Era City", "LocalTexts": {"fr": "Cite de la Nouvelle Ere", "de": "Neue Ara Stadt", "es": "Ciudad Nueva Era"}},
+"Released": true,
+"Comment": "Main hub town - built around the ancient Guild Tree",
+"SortOrder": 0
+},
+"backup_master_zone": {
+"$type": "RogueEssence.Data.ZoneEntrySummary, RogueEssence",
+"NoEXP": false, "Level": -1, "LevelCap": false, "KeepSkills": false,
+"TeamRestrict": false, "TeamSize": -1, "MoneyRestrict": false,
+"BagRestrict": -1, "BagSize": -1, "Rescues": 0, "CountedFloors": 0, "Rogue": 0,
+"Grounds": ["new_era_city", "misty_reach_forest", "guild_hall", "guild_heros_room", "guild_dining_room", "cafe", "hospital", "library", "dojo", "park", "bank", "market"],
+"Maps": [[0]],
+"Name": {"DefaultText": "Debug Hub", "LocalTexts": {}},
+"Released": true,
+"Comment": "Master zone containing all grounds for debug purposes",
+"SortOrder": -1
+}
+}
+}

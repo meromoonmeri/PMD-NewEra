@@ -1,0 +1,19 @@
+{
+  "Version": "0.7.18.1",
+  "Object": {
+    "$type": "PMDC.Data.ItemData, PMDC",
+    "Name": {
+      "DefaultText": "Geo Pebble",
+      "LocalTexts": {
+        "fr": "Caillou"
+      }
+    },
+    "Released": true,
+    "Comment": "A small pebble that deals minor damage when thrown.",
+    "Desc": {
+      "DefaultText": "A small pebble that deals minor damage when thrown.",
+      "LocalTexts": {}
+    },
+    "SortOrder": 69
+  }
+}

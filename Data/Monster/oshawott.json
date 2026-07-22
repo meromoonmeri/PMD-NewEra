@@ -1,0 +1,74 @@
+{
+  "Version": "0.7.18.1",
+  "Object": {
+    "$type": "RogueEssence.Data.MonsterData, RogueEssence",
+    "Name": {
+      "DefaultText": "Oshawott",
+      "LocalTexts": {}
+    },
+    "Released": true,
+    "Comment": "Gen 5 Water starter",
+    "Title": {
+      "DefaultText": "",
+      "LocalTexts": {}
+    },
+    "IndexNum": 501,
+    "EXPTable": "medium_slow",
+    "SkillGroup1": "undiscovered",
+    "SkillGroup2": "amorphous",
+    "JoinRate": -1,
+    "PromoteFrom": "",
+    "Promotions": [],
+    "Forms": [
+      {
+        "$type": "PMDC.Data.MonsterFormData, PMDC",
+        "Released": true,
+        "Generation": 5,
+        "GenderlessWeight": 0,
+        "MaleWeight": 7,
+        "FemaleWeight": 1,
+        "BaseHP": 55,
+        "BaseAtk": 55,
+        "BaseDef": 45,
+        "BaseMAtk": 63,
+        "BaseMDef": 45,
+        "BaseSpeed": 45,
+        "ExpYield": 62,
+        "Height": 0.5,
+        "Weight": 10.0,
+        "Personalities": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "TeachSkills": [],
+        "SharedSkills": [],
+        "SecretSkills": [],
+        "FormName": {
+          "DefaultText": "Oshawott",
+          "LocalTexts": {}
+        },
+        "Temporary": false,
+        "Element1": "water",
+        "Element2": "none",
+        "Intrinsic1": "torrent",
+        "Intrinsic2": "none",
+        "Intrinsic3": "none",
+        "LevelSkills": []
+      }
+    ]
+  }
+}

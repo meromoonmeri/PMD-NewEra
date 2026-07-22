@@ -1,0 +1,19 @@
+{
+  "Version": "0.7.18.1",
+  "Object": {
+    "$type": "PMDC.Data.ItemData, PMDC",
+    "Name": {
+      "DefaultText": "Sleep Seed",
+      "LocalTexts": {
+        "fr": "Graine Sommeil"
+      }
+    },
+    "Released": true,
+    "Comment": "Puts an enemy to sleep when thrown.",
+    "Desc": {
+      "DefaultText": "Puts an enemy to sleep when thrown.",
+      "LocalTexts": {}
+    },
+    "SortOrder": 846
+  }
+}

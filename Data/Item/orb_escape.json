@@ -1,0 +1,19 @@
+{
+  "Version": "0.7.18.1",
+  "Object": {
+    "$type": "PMDC.Data.ItemData, PMDC",
+    "Name": {
+      "DefaultText": "Escape Orb",
+      "LocalTexts": {
+        "fr": "Orbe Fuite"
+      }
+    },
+    "Released": true,
+    "Comment": "Instantly escapes from the dungeon.",
+    "Desc": {
+      "DefaultText": "Instantly escapes from the dungeon.",
+      "LocalTexts": {}
+    },
+    "SortOrder": 536
+  }
+}

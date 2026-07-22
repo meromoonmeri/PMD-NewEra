@@ -1,0 +1,19 @@
+{
+  "Version": "0.7.18.1",
+  "Object": {
+    "$type": "PMDC.Data.ItemData, PMDC",
+    "Name": {
+      "DefaultText": "Totter Orb",
+      "LocalTexts": {
+        "fr": "Orbe Vertige"
+      }
+    },
+    "Released": true,
+    "Comment": "Confuses all enemies on the floor.",
+    "Desc": {
+      "DefaultText": "Confuses all enemies on the floor.",
+      "LocalTexts": {}
+    },
+    "SortOrder": 383
+  }
+}

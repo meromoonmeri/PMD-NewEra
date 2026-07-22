@@ -1,0 +1,19 @@
+{
+  "Version": "0.7.18.1",
+  "Object": {
+    "$type": "PMDC.Data.ItemData, PMDC",
+    "Name": {
+      "DefaultText": "Scanner Orb",
+      "LocalTexts": {
+        "fr": "Orbe Scanner"
+      }
+    },
+    "Released": true,
+    "Comment": "Reveals the locations of all items on the floor.",
+    "Desc": {
+      "DefaultText": "Reveals the locations of all items on the floor.",
+      "LocalTexts": {}
+    },
+    "SortOrder": 204
+  }
+}

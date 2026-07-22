@@ -1,0 +1,6 @@
+# PMD: New Era mod files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~

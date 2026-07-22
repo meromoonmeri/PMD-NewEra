@@ -1,0 +1,19 @@
+{
+  "Version": "0.7.18.1",
+  "Object": {
+    "$type": "PMDC.Data.ItemData, PMDC",
+    "Name": {
+      "DefaultText": "Warp Seed",
+      "LocalTexts": {
+        "fr": "Graine Distorsion"
+      }
+    },
+    "Released": true,
+    "Comment": "Warps you to another floor.",
+    "Desc": {
+      "DefaultText": "Warps you to another floor.",
+      "LocalTexts": {}
+    },
+    "SortOrder": 87
+  }
+}

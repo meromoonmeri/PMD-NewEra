@@ -1,0 +1,19 @@
+{
+  "Version": "0.7.18.1",
+  "Object": {
+    "$type": "PMDC.Data.ItemData, PMDC",
+    "Name": {
+      "DefaultText": "Gold Gummi",
+      "LocalTexts": {
+        "fr": "Gelatine Or"
+      }
+    },
+    "Released": true,
+    "Comment": "A rare Gummi that raises all stats significantly.",
+    "Desc": {
+      "DefaultText": "A rare Gummi that raises all stats significantly.",
+      "LocalTexts": {}
+    },
+    "SortOrder": 491
+  }
+}

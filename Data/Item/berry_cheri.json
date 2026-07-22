@@ -1,0 +1,19 @@
+{
+  "Version": "0.7.18.1",
+  "Object": {
+    "$type": "PMDC.Data.ItemData, PMDC",
+    "Name": {
+      "DefaultText": "Cheri Berry",
+      "LocalTexts": {
+        "fr": "Baie Cheri"
+      }
+    },
+    "Released": true,
+    "Comment": "Cures Paralysis status.",
+    "Desc": {
+      "DefaultText": "Cures Paralysis status.",
+      "LocalTexts": {}
+    },
+    "SortOrder": 839
+  }
+}

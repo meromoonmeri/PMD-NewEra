@@ -1,0 +1,19 @@
+{
+  "Version": "0.7.18.1",
+  "Object": {
+    "$type": "PMDC.Data.ItemData, PMDC",
+    "Name": {
+      "DefaultText": "Time Crest",
+      "LocalTexts": {
+        "fr": "Creste Temporelle"
+      }
+    },
+    "Released": true,
+    "Comment": "A fragment of Dialga's power. Allows control over temporal energy. Earned after purifying the corrupted Dialga.",
+    "Desc": {
+      "DefaultText": "A fragment of Dialga's power. Allows control over temporal energy. Earned after purifying the corrupted Dialga.",
+      "LocalTexts": {}
+    },
+    "SortOrder": 857
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "Version": "0.7.18.1",
+  "Object": {
+    "$type": "PMDC.Data.ItemData, PMDC",
+    "Name": {
+      "DefaultText": "Vile Seed",
+      "LocalTexts": {
+        "fr": "Graine Pourrie"
+      }
+    },
+    "Released": true,
+    "Comment": "Lowers the level of a Pokemon hit by 1.",
+    "Desc": {
+      "DefaultText": "Lowers the level of a Pokemon hit by 1.",
+      "LocalTexts": {}
+    },
+    "SortOrder": 506
+  }
+}

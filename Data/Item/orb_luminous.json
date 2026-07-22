@@ -1,0 +1,19 @@
+{
+  "Version": "0.7.18.1",
+  "Object": {
+    "$type": "PMDC.Data.ItemData, PMDC",
+    "Name": {
+      "DefaultText": "Luminous Orb",
+      "LocalTexts": {
+        "fr": "Orbe Lumineux"
+      }
+    },
+    "Released": true,
+    "Comment": "Lights up the entire floor.",
+    "Desc": {
+      "DefaultText": "Lights up the entire floor.",
+      "LocalTexts": {}
+    },
+    "SortOrder": 5
+  }
+}

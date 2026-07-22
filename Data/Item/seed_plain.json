@@ -1,0 +1,19 @@
+{
+  "Version": "0.7.18.1",
+  "Object": {
+    "$type": "PMDC.Data.ItemData, PMDC",
+    "Name": {
+      "DefaultText": "Plain Seed",
+      "LocalTexts": {
+        "fr": "Graine Ordinaire"
+      }
+    },
+    "Released": true,
+    "Comment": "A seed that restores a small amount of HP.",
+    "Desc": {
+      "DefaultText": "A seed that restores a small amount of HP.",
+      "LocalTexts": {}
+    },
+    "SortOrder": 630
+  }
+}

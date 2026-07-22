@@ -1,0 +1,19 @@
+{
+  "Version": "0.7.18.1",
+  "Object": {
+    "$type": "PMDC.Data.ItemData, PMDC",
+    "Name": {
+      "DefaultText": "Aspear Berry",
+      "LocalTexts": {
+        "fr": "Baie Kika"
+      }
+    },
+    "Released": true,
+    "Comment": "Cures Freeze status.",
+    "Desc": {
+      "DefaultText": "Cures Freeze status.",
+      "LocalTexts": {}
+    },
+    "SortOrder": 911
+  }
+}

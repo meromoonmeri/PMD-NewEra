@@ -1,0 +1,19 @@
+{
+  "Version": "0.7.18.1",
+  "Object": {
+    "$type": "PMDC.Data.ItemData, PMDC",
+    "Name": {
+      "DefaultText": "Origin Plate",
+      "LocalTexts": {
+        "fr": "Plaque Originelle"
+      }
+    },
+    "Released": true,
+    "Comment": "The ultimate artifact. Channel of Arceus's creation power. Required to seal the Primordial Chaos.",
+    "Desc": {
+      "DefaultText": "The ultimate artifact. Channel of Arceus's creation power. Required to seal the Primordial Chaos.",
+      "LocalTexts": {}
+    },
+    "SortOrder": 414
+  }
+}

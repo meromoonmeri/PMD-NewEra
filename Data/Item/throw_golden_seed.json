@@ -1,0 +1,19 @@
+{
+  "Version": "0.7.18.1",
+  "Object": {
+    "$type": "PMDC.Data.ItemData, PMDC",
+    "Name": {
+      "DefaultText": "Golden Seed",
+      "LocalTexts": {
+        "fr": "Graine Doree"
+      }
+    },
+    "Released": true,
+    "Comment": "A seed of extraordinary value. Temporarily boosts stats when held.",
+    "Desc": {
+      "DefaultText": "A seed of extraordinary value. Temporarily boosts stats when held.",
+      "LocalTexts": {}
+    },
+    "SortOrder": 351
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "Version": "0.7.18.1",
+  "Object": {
+    "$type": "PMDC.Data.ItemData, PMDC",
+    "Name": {
+      "DefaultText": "Pecha Berry",
+      "LocalTexts": {
+        "fr": "Baie Pecha"
+      }
+    },
+    "Released": true,
+    "Comment": "Cures Poison status.",
+    "Desc": {
+      "DefaultText": "Cures Poison status.",
+      "LocalTexts": {}
+    },
+    "SortOrder": 652
+  }
+}

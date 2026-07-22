@@ -1,0 +1,19 @@
+{
+  "Version": "0.7.18.1",
+  "Object": {
+    "$type": "PMDC.Data.ItemData, PMDC",
+    "Name": {
+      "DefaultText": "Trawl Orb",
+      "LocalTexts": {
+        "fr": "Orbe Filet"
+      }
+    },
+    "Released": true,
+    "Comment": "Pulls all items on the floor toward you.",
+    "Desc": {
+      "DefaultText": "Pulls all items on the floor toward you.",
+      "LocalTexts": {}
+    },
+    "SortOrder": 770
+  }
+}

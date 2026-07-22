@@ -1,0 +1,19 @@
+{
+  "Version": "0.7.18.1",
+  "Object": {
+    "$type": "PMDC.Data.ItemData, PMDC",
+    "Name": {
+      "DefaultText": "Stick",
+      "LocalTexts": {
+        "fr": "Batonn"
+      }
+    },
+    "Released": true,
+    "Comment": "A stick that can be thrown to hit enemies.",
+    "Desc": {
+      "DefaultText": "A stick that can be thrown to hit enemies.",
+      "LocalTexts": {}
+    },
+    "SortOrder": 996
+  }
+}

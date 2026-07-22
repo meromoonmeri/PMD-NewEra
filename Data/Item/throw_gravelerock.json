@@ -1,0 +1,19 @@
+{
+  "Version": "0.7.18.1",
+  "Object": {
+    "$type": "PMDC.Data.ItemData, PMDC",
+    "Name": {
+      "DefaultText": "Gravelerock",
+      "LocalTexts": {
+        "fr": "Roche"
+      }
+    },
+    "Released": true,
+    "Comment": "A rock that deals damage when thrown. Can hit from a distance.",
+    "Desc": {
+      "DefaultText": "A rock that deals damage when thrown. Can hit from a distance.",
+      "LocalTexts": {}
+    },
+    "SortOrder": 856
+  }
+}

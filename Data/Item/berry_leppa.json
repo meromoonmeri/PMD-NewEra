@@ -1,0 +1,19 @@
+{
+  "Version": "0.7.18.1",
+  "Object": {
+    "$type": "PMDC.Data.ItemData, PMDC",
+    "Name": {
+      "DefaultText": "Leppa Berry",
+      "LocalTexts": {
+        "fr": "Baie Maron"
+      }
+    },
+    "Released": true,
+    "Comment": "Restores 10 PP to all moves.",
+    "Desc": {
+      "DefaultText": "Restores 10 PP to all moves.",
+      "LocalTexts": {}
+    },
+    "SortOrder": 43
+  }
+}

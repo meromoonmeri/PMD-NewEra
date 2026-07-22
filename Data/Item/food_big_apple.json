@@ -1,0 +1,19 @@
+{
+  "Version": "0.7.18.1",
+  "Object": {
+    "$type": "PMDC.Data.ItemData, PMDC",
+    "Name": {
+      "DefaultText": "Big Apple",
+      "LocalTexts": {
+        "fr": "Grosse Pomme"
+      }
+    },
+    "Released": true,
+    "Comment": "A large apple that restores 30 HP.",
+    "Desc": {
+      "DefaultText": "A large apple that restores 30 HP.",
+      "LocalTexts": {}
+    },
+    "SortOrder": 362
+  }
+}

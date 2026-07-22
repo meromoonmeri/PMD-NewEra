@@ -1,0 +1,74 @@
+{
+  "Version": "0.7.18.1",
+  "Object": {
+    "$type": "RogueEssence.Data.MonsterData, RogueEssence",
+    "Name": {
+      "DefaultText": "Smoliv",
+      "LocalTexts": {}
+    },
+    "Released": true,
+    "Comment": "Gen 9 Grass/Normal starter",
+    "Title": {
+      "DefaultText": "",
+      "LocalTexts": {}
+    },
+    "IndexNum": 928,
+    "EXPTable": "medium_slow",
+    "SkillGroup1": "undiscovered",
+    "SkillGroup2": "amorphous",
+    "JoinRate": -1,
+    "PromoteFrom": "",
+    "Promotions": [],
+    "Forms": [
+      {
+        "$type": "PMDC.Data.MonsterFormData, PMDC",
+        "Released": true,
+        "Generation": 9,
+        "GenderlessWeight": 0,
+        "MaleWeight": 7,
+        "FemaleWeight": 1,
+        "BaseHP": 40,
+        "BaseAtk": 42,
+        "BaseDef": 55,
+        "BaseMAtk": 35,
+        "BaseMDef": 55,
+        "BaseSpeed": 30,
+        "ExpYield": 51,
+        "Height": 0.5,
+        "Weight": 10.0,
+        "Personalities": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "TeachSkills": [],
+        "SharedSkills": [],
+        "SecretSkills": [],
+        "FormName": {
+          "DefaultText": "Smoliv",
+          "LocalTexts": {}
+        },
+        "Temporary": false,
+        "Element1": "grass",
+        "Element2": "normal",
+        "Intrinsic1": "early_bird",
+        "Intrinsic2": "none",
+        "Intrinsic3": "none",
+        "LevelSkills": []
+      }
+    ]
+  }
+}

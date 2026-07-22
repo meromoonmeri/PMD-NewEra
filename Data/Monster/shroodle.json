@@ -1,0 +1,74 @@
+{
+  "Version": "0.7.18.1",
+  "Object": {
+    "$type": "RogueEssence.Data.MonsterData, RogueEssence",
+    "Name": {
+      "DefaultText": "Shroodle",
+      "LocalTexts": {}
+    },
+    "Released": true,
+    "Comment": "Gen 9 Poison/Normal starter",
+    "Title": {
+      "DefaultText": "",
+      "LocalTexts": {}
+    },
+    "IndexNum": 943,
+    "EXPTable": "medium_slow",
+    "SkillGroup1": "undiscovered",
+    "SkillGroup2": "amorphous",
+    "JoinRate": -1,
+    "PromoteFrom": "",
+    "Promotions": [],
+    "Forms": [
+      {
+        "$type": "PMDC.Data.MonsterFormData, PMDC",
+        "Released": true,
+        "Generation": 9,
+        "GenderlessWeight": 0,
+        "MaleWeight": 7,
+        "FemaleWeight": 1,
+        "BaseHP": 40,
+        "BaseAtk": 50,
+        "BaseDef": 30,
+        "BaseMAtk": 50,
+        "BaseMDef": 30,
+        "BaseSpeed": 60,
+        "ExpYield": 52,
+        "Height": 0.5,
+        "Weight": 10.0,
+        "Personalities": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "TeachSkills": [],
+        "SharedSkills": [],
+        "SecretSkills": [],
+        "FormName": {
+          "DefaultText": "Shroodle",
+          "LocalTexts": {}
+        },
+        "Temporary": false,
+        "Element1": "poison",
+        "Element2": "normal",
+        "Intrinsic1": "toxic_chain",
+        "Intrinsic2": "none",
+        "Intrinsic3": "none",
+        "LevelSkills": []
+      }
+    ]
+  }
+}

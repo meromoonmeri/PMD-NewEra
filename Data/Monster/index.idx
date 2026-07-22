@@ -1,0 +1,1566 @@
+{
+  "Version": "0.7.18.1",
+  "Object": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[RogueEssence.Data.EntrySummary, RogueEssence]], System.Private.CoreLib",
+    "bulbasaur": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Bulbasaur",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Bulbasaur",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 1 Grass/Poison starter",
+      "SortOrder": 1
+    },
+    "charmander": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Charmander",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Charmander",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 1 Fire starter",
+      "SortOrder": 4
+    },
+    "squirtle": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Squirtle",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Squirtle",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 1 Water starter",
+      "SortOrder": 7
+    },
+    "pikachu": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Pikachu",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Pikachu",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 1 Electric starter",
+      "SortOrder": 25
+    },
+    "vulpix": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Vulpix",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Vulpix",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 1 Fire starter",
+      "SortOrder": 37
+    },
+    "meowth": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Meowth",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Meowth",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 1 Normal starter",
+      "SortOrder": 52
+    },
+    "psyduck": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Psyduck",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Psyduck",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 1 Water starter",
+      "SortOrder": 54
+    },
+    "growlithe": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Growlithe",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Growlithe",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 1 Fire starter",
+      "SortOrder": 58
+    },
+    "abra": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Abra",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Abra",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 1 Psychic starter",
+      "SortOrder": 63
+    },
+    "machop": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Machop",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Machop",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 1 Fighting starter",
+      "SortOrder": 66
+    },
+    "geodude": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Geodude",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Geodude",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 1 Rock/Ground starter",
+      "SortOrder": 74
+    },
+    "eevee": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Eevee",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Eevee",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 1 Normal starter",
+      "SortOrder": 133
+    },
+    "dratini": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Dratini",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Dratini",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 1 Dragon starter",
+      "SortOrder": 147
+    },
+    "chikorita": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Chikorita",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Chikorita",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 2 Grass starter",
+      "SortOrder": 152
+    },
+    "cyndaquil": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Cyndaquil",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Cyndaquil",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 2 Fire starter",
+      "SortOrder": 155
+    },
+    "totodile": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Totodile",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Totodile",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 2 Water starter",
+      "SortOrder": 158
+    },
+    "mareep": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Mareep",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Mareep",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 2 Electric starter",
+      "SortOrder": 179
+    },
+    "phanpy": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Phanpy",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Phanpy",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 2 Ground starter",
+      "SortOrder": 231
+    },
+    "tyrogue": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Tyrogue",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Tyrogue",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 2 Fighting starter",
+      "SortOrder": 236
+    },
+    "elekid": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Elekid",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Elekid",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 2 Electric starter",
+      "SortOrder": 239
+    },
+    "magby": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Magby",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Magby",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 2 Fire starter",
+      "SortOrder": 240
+    },
+    "treecko": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Treecko",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Treecko",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 3 Grass starter",
+      "SortOrder": 252
+    },
+    "torchic": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Torchic",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Torchic",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 3 Fire starter",
+      "SortOrder": 255
+    },
+    "mudkip": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Mudkip",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Mudkip",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 3 Water starter",
+      "SortOrder": 258
+    },
+    "ralts": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Ralts",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Ralts",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 3 Psychic/Fairy starter",
+      "SortOrder": 280
+    },
+    "skitty": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Skitty",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Skitty",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 3 Normal starter",
+      "SortOrder": 300
+    },
+    "beldum": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Beldum",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Beldum",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 3 Steel/Psychic starter",
+      "SortOrder": 374
+    },
+    "turtwig": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Turtwig",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Turtwig",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 4 Grass starter",
+      "SortOrder": 387
+    },
+    "chimchar": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Chimchar",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Chimchar",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 4 Fire/Fighting starter",
+      "SortOrder": 390
+    },
+    "piplup": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Piplup",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Piplup",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 4 Water starter",
+      "SortOrder": 393
+    },
+    "shinx": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Shinx",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Shinx",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 4 Electric starter",
+      "SortOrder": 403
+    },
+    "gible": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Gible",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Gible",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 4 Dragon/Ground starter",
+      "SortOrder": 443
+    },
+    "riolu": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Riolu",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Riolu",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 4 Fighting starter",
+      "SortOrder": 447
+    },
+    "snivy": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Snivy",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Snivy",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 5 Grass starter",
+      "SortOrder": 495
+    },
+    "tepig": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Tepig",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Tepig",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 5 Fire starter",
+      "SortOrder": 498
+    },
+    "oshawott": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Oshawott",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Oshawott",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 5 Water starter",
+      "SortOrder": 501
+    },
+    "litwick": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Litwick",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Litwick",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 5 Ghost/Fire starter",
+      "SortOrder": 607
+    },
+    "axew": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Axew",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Axew",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 5 Dragon starter",
+      "SortOrder": 610
+    },
+    "deino": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Deino",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Deino",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 5 Dark/Dragon starter",
+      "SortOrder": 633
+    },
+    "larvesta": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Larvesta",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Larvesta",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 5 Bug/Fire starter",
+      "SortOrder": 636
+    },
+    "chespin": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Chespin",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Chespin",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 6 Grass starter",
+      "SortOrder": 650
+    },
+    "fennekin": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Fennekin",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Fennekin",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 6 Fire starter",
+      "SortOrder": 653
+    },
+    "froakie": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Froakie",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Froakie",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 6 Water starter",
+      "SortOrder": 656
+    },
+    "skiddo": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Skiddo",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Skiddo",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 6 Grass starter",
+      "SortOrder": 672
+    },
+    "pancham": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Pancham",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Pancham",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 6 Fighting starter",
+      "SortOrder": 674
+    },
+    "honedge": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Honedge",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Honedge",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 6 Steel/Ghost starter",
+      "SortOrder": 679
+    },
+    "goomy": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Goomy",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Goomy",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 6 Dragon starter",
+      "SortOrder": 704
+    },
+    "rowlet": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Rowlet",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Rowlet",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 7 Grass/Flying starter",
+      "SortOrder": 722
+    },
+    "litten": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Litten",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Litten",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 7 Fire starter",
+      "SortOrder": 725
+    },
+    "popplio": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Popplio",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Popplio",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 7 Water starter",
+      "SortOrder": 728
+    },
+    "rockruff": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Rockruff",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Rockruff",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 7 Rock starter",
+      "SortOrder": 744
+    },
+    "grookey": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Grookey",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Grookey",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 8 Grass starter",
+      "SortOrder": 810
+    },
+    "scorbunny": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Scorbunny",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Scorbunny",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 8 Fire starter",
+      "SortOrder": 813
+    },
+    "sobble": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Sobble",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Sobble",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 8 Water starter",
+      "SortOrder": 816
+    },
+    "skwovet": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Skwovet",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Skwovet",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 8 Normal starter",
+      "SortOrder": 819
+    },
+    "rookidee": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Rookidee",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Rookidee",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 8 Flying starter",
+      "SortOrder": 821
+    },
+    "blipbug": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Blipbug",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Blipbug",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 8 Bug starter",
+      "SortOrder": 824
+    },
+    "yamper": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Yamper",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Yamper",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 8 Electric starter",
+      "SortOrder": 826
+    },
+    "nickit": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Nickit",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Nickit",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 8 Dark starter",
+      "SortOrder": 827
+    },
+    "wooloo": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Wooloo",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Wooloo",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 8 Normal starter",
+      "SortOrder": 831
+    },
+    "silicobra": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Silicobra",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Silicobra",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 8 Ground starter",
+      "SortOrder": 843
+    },
+    "arrokuda": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Arrokuda",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Arrokuda",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 8 Water starter",
+      "SortOrder": 846
+    },
+    "toxel": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Toxel",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Toxel",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 8 Poison/Electric starter",
+      "SortOrder": 848
+    },
+    "applin": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Applin",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Applin",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 8 Grass/Dragon starter",
+      "SortOrder": 850
+    },
+    "impidimp": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Impidimp",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Impidimp",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 8 Dark/Fairy starter",
+      "SortOrder": 860
+    },
+    "dreepy": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Dreepy",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Dreepy",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 8 Dragon/Ghost starter",
+      "SortOrder": 885
+    },
+    "sprigatito": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Sprigatito",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Sprigatito",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 9 Grass starter",
+      "SortOrder": 906
+    },
+    "fuecoco": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Fuecoco",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Fuecoco",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 9 Fire starter",
+      "SortOrder": 909
+    },
+    "quaxly": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Quaxly",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Quaxly",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 9 Water starter",
+      "SortOrder": 912
+    },
+    "lechonk": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Lechonk",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Lechonk",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 9 Normal starter",
+      "SortOrder": 915
+    },
+    "nymble": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Nymble",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Nymble",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 9 Bug starter",
+      "SortOrder": 919
+    },
+    "tarountula": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Tarountula",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Tarountula",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 9 Bug starter",
+      "SortOrder": 921
+    },
+    "pawmot": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Pawmot",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Pawmot",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 9 Electric/Fighting starter",
+      "SortOrder": 921
+    },
+    "tandemaus": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Tandemaus",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Tandemaus",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 9 Normal starter",
+      "SortOrder": 924
+    },
+    "fidough": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Fidough",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Fidough",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 9 Fairy starter",
+      "SortOrder": 926
+    },
+    "smoliv": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Smoliv",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Smoliv",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 9 Grass/Normal starter",
+      "SortOrder": 928
+    },
+    "charcadet": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Charcadet",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Charcadet",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 9 Fire starter",
+      "SortOrder": 935
+    },
+    "shroodle": {
+      "$type": "RogueEssence.Data.MonsterEntrySummary, RogueEssence",
+      "Forms": [
+        {
+          "Name": {
+            "DefaultText": "Shroodle",
+            "LocalTexts": {}
+          },
+          "Released": true,
+          "Temporary": false
+        }
+      ],
+      "Name": {
+        "DefaultText": "Shroodle",
+        "LocalTexts": {}
+      },
+      "Released": true,
+      "Comment": "Gen 9 Poison/Normal starter",
+      "SortOrder": 943
+    }
+  }
+}

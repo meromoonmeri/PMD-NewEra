@@ -1,0 +1,19 @@
+{
+  "Version": "0.7.18.1",
+  "Object": {
+    "$type": "PMDC.Data.ItemData, PMDC",
+    "Name": {
+      "DefaultText": "Rawst Berry",
+      "LocalTexts": {
+        "fr": "Baie Baie"
+      }
+    },
+    "Released": true,
+    "Comment": "Cures Burn status.",
+    "Desc": {
+      "DefaultText": "Cures Burn status.",
+      "LocalTexts": {}
+    },
+    "SortOrder": 4
+  }
+}

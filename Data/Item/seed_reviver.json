@@ -1,0 +1,19 @@
+{
+  "Version": "0.7.18.1",
+  "Object": {
+    "$type": "PMDC.Data.ItemData, PMDC",
+    "Name": {
+      "DefaultText": "Reviver Seed",
+      "LocalTexts": {
+        "fr": "Graine Renaissance"
+      }
+    },
+    "Released": true,
+    "Comment": "Automatically revives you when you faint.",
+    "Desc": {
+      "DefaultText": "Automatically revives you when you faint.",
+      "LocalTexts": {}
+    },
+    "SortOrder": 166
+  }
+}

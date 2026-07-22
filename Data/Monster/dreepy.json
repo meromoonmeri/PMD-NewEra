@@ -1,0 +1,74 @@
+{
+  "Version": "0.7.18.1",
+  "Object": {
+    "$type": "RogueEssence.Data.MonsterData, RogueEssence",
+    "Name": {
+      "DefaultText": "Dreepy",
+      "LocalTexts": {}
+    },
+    "Released": true,
+    "Comment": "Gen 8 Dragon/Ghost starter",
+    "Title": {
+      "DefaultText": "",
+      "LocalTexts": {}
+    },
+    "IndexNum": 885,
+    "EXPTable": "medium_slow",
+    "SkillGroup1": "undiscovered",
+    "SkillGroup2": "amorphous",
+    "JoinRate": -1,
+    "PromoteFrom": "",
+    "Promotions": [],
+    "Forms": [
+      {
+        "$type": "PMDC.Data.MonsterFormData, PMDC",
+        "Released": true,
+        "Generation": 8,
+        "GenderlessWeight": 0,
+        "MaleWeight": 7,
+        "FemaleWeight": 1,
+        "BaseHP": 28,
+        "BaseAtk": 60,
+        "BaseDef": 30,
+        "BaseMAtk": 60,
+        "BaseMDef": 30,
+        "BaseSpeed": 82,
+        "ExpYield": 58,
+        "Height": 0.5,
+        "Weight": 10.0,
+        "Personalities": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "TeachSkills": [],
+        "SharedSkills": [],
+        "SecretSkills": [],
+        "FormName": {
+          "DefaultText": "Dreepy",
+          "LocalTexts": {}
+        },
+        "Temporary": false,
+        "Element1": "dragon",
+        "Element2": "ghost",
+        "Intrinsic1": "clear_body",
+        "Intrinsic2": "none",
+        "Intrinsic3": "none",
+        "LevelSkills": []
+      }
+    ]
+  }
+}

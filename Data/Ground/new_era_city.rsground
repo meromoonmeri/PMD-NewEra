@@ -1,0 +1,190 @@
+{
+"Version": "0.7.16.0",
+"Object": {
+"$type": "RogueEssence.Ground.GroundMap, RogueEssence",
+"TexSize": 1,
+"Name": {"DefaultText": "New Era City", "LocalTexts": {"fr": "Cite de la Nouvelle Ere", "de": "Neue Ara Stadt", "es": "Ciudad Nueva Era"}},
+"Released": true,
+"Comment": "Main hub town - the largest city in the Pokemon World, built around the ancient Guild Tree.",
+"obstacles": [
+[{"Bounds": {"X": 0, "Y": 0, "Width": 8, "Height": 8}, "Layer": "Wall", "TerrainType": 0, "Movable": false, "Swap": false}],
+[{"Bounds": {"X": 280, "Y": 60, "Width": 40, "Height": 40}, "Layer": "Wall", "TerrainType": 0, "Movable": false, "Swap": false}]
+],
+"characters": [
+{
+"Name": "Guildmaster_Dragonite",
+"CharID": "dragonite",
+"CharForm": 0,
+"TileX": 300,
+"TileY": 200,
+"Direction": 2,
+"Pattern": "Static"
+},
+{
+"Name": "Lopunny",
+"CharID": "lopunny",
+"CharForm": 0,
+"TileX": 310,
+"TileY": 195,
+"Direction": 2,
+"Pattern": "Static"
+},
+{
+"Name": "Cinccino",
+"CharID": "cinccino",
+"CharForm": 0,
+"TileX": 180,
+"TileY": 250,
+"Direction": 2,
+"Pattern": "Static"
+},
+{
+"Name": "Chansey",
+"CharID": "chansey",
+"CharForm": 0,
+"TileX": 220,
+"TileY": 150,
+"Direction": 2,
+"Pattern": "Static"
+},
+{
+"Name": "Gothitelle",
+"CharID": "gothitelle",
+"CharForm": 0,
+"TileX": 150,
+"TileY": 180,
+"Direction": 2,
+"Pattern": "Static"
+},
+{
+"Name": "Scrafty",
+"CharID": "scrafty",
+"CharForm": 0,
+"TileX": 350,
+"TileY": 200,
+"Direction": 2,
+"Pattern": "Static"
+},
+{
+"Name": "Meowstic",
+"CharID": "meowstic",
+"CharForm": 0,
+"TileX": 120,
+"TileY": 280,
+"Direction": 2,
+"Pattern": "Static"
+},
+{
+"Name": "Sunflora",
+"CharID": "sunflora",
+"CharForm": 0,
+"TileX": 400,
+"TileY": 300,
+"Direction": 2,
+"Pattern": "Static"
+},
+{
+"Name": "Persian",
+"CharID": "persian",
+"CharForm": 0,
+"TileX": 250,
+"TileY": 250,
+"Direction": 2,
+"Pattern": "Static"
+},
+{
+"Name": "Absol",
+"CharID": "absol",
+"CharForm": 0,
+"TileX": 290,
+"TileY": 210,
+"Direction": 2,
+"Pattern": "Static"
+}
+],
+"actions": [
+{
+"Name": "Guild_Enter",
+"Type": "Ground",
+"Arg": 1,
+"X": 300,
+"Y": 215,
+"Width": 16,
+"Height": 16
+},
+{
+"Name": "Shop_Enter",
+"Type": "Ground",
+"Arg": 2,
+"X": 240,
+"Y": 250,
+"Width": 16,
+"Height": 16
+},
+{
+"Name": "Dojo_Enter",
+"Type": "Ground",
+"Arg": 3,
+"X": 350,
+"Y": 215,
+"Width": 16,
+"Height": 16
+},
+{
+"Name": "Cafe_Enter",
+"Type": "Ground",
+"Arg": 4,
+"X": 180,
+"Y": 265,
+"Width": 16,
+"Height": 16
+},
+{
+"Name": "Hospital_Enter",
+"Type": "Ground",
+"Arg": 5,
+"X": 220,
+"Y": 165,
+"Width": 16,
+"Height": 16
+},
+{
+"Name": "Library_Enter",
+"Type": "Ground",
+"Arg": 6,
+"X": 150,
+"Y": 195,
+"Width": 16,
+"Height": 16
+},
+{
+"Name": "Park_Enter",
+"Type": "Ground",
+"Arg": 7,
+"X": 400,
+"Y": 315,
+"Width": 16,
+"Height": 16
+},
+{
+"Name": "Fortune_Enter",
+"Type": "Ground",
+"Arg": 8,
+"X": 120,
+"Y": 295,
+"Width": 16,
+"Height": 16
+}
+],
+"npc_infos": [
+{
+"Name": "WakeupLocation",
+"X": 300,
+"Y": 280,
+"Width": 8,
+"Height": 8,
+"Dir": 0
+}
+]
+}
+}

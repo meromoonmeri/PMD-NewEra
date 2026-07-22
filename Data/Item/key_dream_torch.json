@@ -1,0 +1,19 @@
+{
+  "Version": "0.7.18.1",
+  "Object": {
+    "$type": "PMDC.Data.ItemData, PMDC",
+    "Name": {
+      "DefaultText": "Dream Torch",
+      "LocalTexts": {
+        "fr": "Torche Reve"
+      }
+    },
+    "Released": true,
+    "Comment": "A torch that burns with dream energy. Essential for navigating the Dream Dimension and purifying nightmares.",
+    "Desc": {
+      "DefaultText": "A torch that burns with dream energy. Essential for navigating the Dream Dimension and purifying nightmares.",
+      "LocalTexts": {}
+    },
+    "SortOrder": 813
+  }
+}

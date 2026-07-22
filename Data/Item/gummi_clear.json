@@ -1,0 +1,19 @@
+{
+  "Version": "0.7.18.1",
+  "Object": {
+    "$type": "PMDC.Data.ItemData, PMDC",
+    "Name": {
+      "DefaultText": "Clear Gummi",
+      "LocalTexts": {
+        "fr": "Gelatine Transparente"
+      }
+    },
+    "Released": true,
+    "Comment": "A Gummi that raises all stats slightly. The type of Gummi determines which stats.",
+    "Desc": {
+      "DefaultText": "A Gummi that raises all stats slightly. The type of Gummi determines which stats.",
+      "LocalTexts": {}
+    },
+    "SortOrder": 614
+  }
+}

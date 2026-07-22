@@ -1,0 +1,19 @@
+{
+  "Version": "0.7.18.1",
+  "Object": {
+    "$type": "PMDC.Data.ItemData, PMDC",
+    "Name": {
+      "DefaultText": "Dimensional Anchor",
+      "LocalTexts": {
+        "fr": "Ancre Dimensionnelle"
+      }
+    },
+    "Released": true,
+    "Comment": "An ancient device that stabilizes dimensional boundaries. Found in the Underground City. It resonates with the hero's soul.",
+    "Desc": {
+      "DefaultText": "An ancient device that stabilizes dimensional boundaries. Found in the Underground City. It resonates with the hero's soul.",
+      "LocalTexts": {}
+    },
+    "SortOrder": 695
+  }
+}

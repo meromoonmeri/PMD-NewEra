@@ -1,0 +1,19 @@
+{
+  "Version": "0.7.18.1",
+  "Object": {
+    "$type": "PMDC.Data.ItemData, PMDC",
+    "Name": {
+      "DefaultText": "Blast Seed",
+      "LocalTexts": {
+        "fr": "Graine Explosion"
+      }
+    },
+    "Released": true,
+    "Comment": "Deals damage to all nearby enemies when thrown.",
+    "Desc": {
+      "DefaultText": "Deals damage to all nearby enemies when thrown.",
+      "LocalTexts": {}
+    },
+    "SortOrder": 324
+  }
+}

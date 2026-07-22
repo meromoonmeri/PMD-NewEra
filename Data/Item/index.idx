@@ -1,0 +1,474 @@
+{
+  "Version": "0.7.18.1",
+  "Object": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[RogueEssence.Data.EntrySummary, RogueEssence]], System.Private.CoreLib",
+    "berry_oran": {
+      "$type": "RogueEssence.Data.ItemEntrySummary, RogueEssence",
+      "Name": {
+        "DefaultText": "Oran Berry",
+        "LocalTexts": {
+          "fr": "Baie Oran"
+        }
+      },
+      "Released": true,
+      "Comment": "A Berry that restores 10 HP when eaten.",
+      "SortOrder": 141
+    },
+    "berry_sitrus": {
+      "$type": "RogueEssence.Data.ItemEntrySummary, RogueEssence",
+      "Name": {
+        "DefaultText": "Sitrus Berry",
+        "LocalTexts": {
+          "fr": "Baie Sitrus"
+        }
+      },
+      "Released": true,
+      "Comment": "A Berry that restores 30 HP when eaten.",
+      "SortOrder": 892
+    },
+    "berry_pecha": {
+      "$type": "RogueEssence.Data.ItemEntrySummary, RogueEssence",
+      "Name": {
+        "DefaultText": "Pecha Berry",
+        "LocalTexts": {
+          "fr": "Baie Pecha"
+        }
+      },
+      "Released": true,
+      "Comment": "Cures Poison status.",
+      "SortOrder": 652
+    },
+    "berry_cheri": {
+      "$type": "RogueEssence.Data.ItemEntrySummary, RogueEssence",
+      "Name": {
+        "DefaultText": "Cheri Berry",
+        "LocalTexts": {
+          "fr": "Baie Cheri"
+        }
+      },
+      "Released": true,
+      "Comment": "Cures Paralysis status.",
+      "SortOrder": 839
+    },
+    "berry_rawst": {
+      "$type": "RogueEssence.Data.ItemEntrySummary, RogueEssence",
+      "Name": {
+        "DefaultText": "Rawst Berry",
+        "LocalTexts": {
+          "fr": "Baie Baie"
+        }
+      },
+      "Released": true,
+      "Comment": "Cures Burn status.",
+      "SortOrder": 4
+    },
+    "berry_chesto": {
+      "$type": "RogueEssence.Data.ItemEntrySummary, RogueEssence",
+      "Name": {
+        "DefaultText": "Chesto Berry",
+        "LocalTexts": {
+          "fr": "Baie Willia"
+        }
+      },
+      "Released": true,
+      "Comment": "Cures Sleep status.",
+      "SortOrder": 275
+    },
+    "berry_aspear": {
+      "$type": "RogueEssence.Data.ItemEntrySummary, RogueEssence",
+      "Name": {
+        "DefaultText": "Aspear Berry",
+        "LocalTexts": {
+          "fr": "Baie Kika"
+        }
+      },
+      "Released": true,
+      "Comment": "Cures Freeze status.",
+      "SortOrder": 911
+    },
+    "berry_lum": {
+      "$type": "RogueEssence.Data.ItemEntrySummary, RogueEssence",
+      "Name": {
+        "DefaultText": "Lum Berry",
+        "LocalTexts": {
+          "fr": "Baie Maron"
+        }
+      },
+      "Released": true,
+      "Comment": "Cures all status conditions.",
+      "SortOrder": 994
+    },
+    "berry_leppa": {
+      "$type": "RogueEssence.Data.ItemEntrySummary, RogueEssence",
+      "Name": {
+        "DefaultText": "Leppa Berry",
+        "LocalTexts": {
+          "fr": "Baie Maron"
+        }
+      },
+      "Released": true,
+      "Comment": "Restores 10 PP to all moves.",
+      "SortOrder": 43
+    },
+    "seed_reviver": {
+      "$type": "RogueEssence.Data.ItemEntrySummary, RogueEssence",
+      "Name": {
+        "DefaultText": "Reviver Seed",
+        "LocalTexts": {
+          "fr": "Graine Renaissance"
+        }
+      },
+      "Released": true,
+      "Comment": "Automatically revives you when you faint.",
+      "SortOrder": 166
+    },
+    "seed_plain": {
+      "$type": "RogueEssence.Data.ItemEntrySummary, RogueEssence",
+      "Name": {
+        "DefaultText": "Plain Seed",
+        "LocalTexts": {
+          "fr": "Graine Ordinaire"
+        }
+      },
+      "Released": true,
+      "Comment": "A seed that restores a small amount of HP.",
+      "SortOrder": 630
+    },
+    "seed_sleep": {
+      "$type": "RogueEssence.Data.ItemEntrySummary, RogueEssence",
+      "Name": {
+        "DefaultText": "Sleep Seed",
+        "LocalTexts": {
+          "fr": "Graine Sommeil"
+        }
+      },
+      "Released": true,
+      "Comment": "Puts an enemy to sleep when thrown.",
+      "SortOrder": 846
+    },
+    "seed_warp": {
+      "$type": "RogueEssence.Data.ItemEntrySummary, RogueEssence",
+      "Name": {
+        "DefaultText": "Warp Seed",
+        "LocalTexts": {
+          "fr": "Graine Distorsion"
+        }
+      },
+      "Released": true,
+      "Comment": "Warps you to another floor.",
+      "SortOrder": 87
+    },
+    "seed_vile": {
+      "$type": "RogueEssence.Data.ItemEntrySummary, RogueEssence",
+      "Name": {
+        "DefaultText": "Vile Seed",
+        "LocalTexts": {
+          "fr": "Graine Pourrie"
+        }
+      },
+      "Released": true,
+      "Comment": "Lowers the level of a Pokemon hit by 1.",
+      "SortOrder": 506
+    },
+    "seed_blast": {
+      "$type": "RogueEssence.Data.ItemEntrySummary, RogueEssence",
+      "Name": {
+        "DefaultText": "Blast Seed",
+        "LocalTexts": {
+          "fr": "Graine Explosion"
+        }
+      },
+      "Released": true,
+      "Comment": "Deals damage to all nearby enemies when thrown.",
+      "SortOrder": 324
+    },
+    "seed_ice": {
+      "$type": "RogueEssence.Data.ItemEntrySummary, RogueEssence",
+      "Name": {
+        "DefaultText": "Freeze Seed",
+        "LocalTexts": {
+          "fr": "Graine Glace"
+        }
+      },
+      "Released": true,
+      "Comment": "Freezes an enemy when thrown.",
+      "SortOrder": 36
+    },
+    "orb_escape": {
+      "$type": "RogueEssence.Data.ItemEntrySummary, RogueEssence",
+      "Name": {
+        "DefaultText": "Escape Orb",
+        "LocalTexts": {
+          "fr": "Orbe Fuite"
+        }
+      },
+      "Released": true,
+      "Comment": "Instantly escapes from the dungeon.",
+      "SortOrder": 536
+    },
+    "orb_scanner": {
+      "$type": "RogueEssence.Data.ItemEntrySummary, RogueEssence",
+      "Name": {
+        "DefaultText": "Scanner Orb",
+        "LocalTexts": {
+          "fr": "Orbe Scanner"
+        }
+      },
+      "Released": true,
+      "Comment": "Reveals the locations of all items on the floor.",
+      "SortOrder": 204
+    },
+    "orb_luminous": {
+      "$type": "RogueEssence.Data.ItemEntrySummary, RogueEssence",
+      "Name": {
+        "DefaultText": "Luminous Orb",
+        "LocalTexts": {
+          "fr": "Orbe Lumineux"
+        }
+      },
+      "Released": true,
+      "Comment": "Lights up the entire floor.",
+      "SortOrder": 5
+    },
+    "orb_totter": {
+      "$type": "RogueEssence.Data.ItemEntrySummary, RogueEssence",
+      "Name": {
+        "DefaultText": "Totter Orb",
+        "LocalTexts": {
+          "fr": "Orbe Vertige"
+        }
+      },
+      "Released": true,
+      "Comment": "Confuses all enemies on the floor.",
+      "SortOrder": 383
+    },
+    "orb_trawl": {
+      "$type": "RogueEssence.Data.ItemEntrySummary, RogueEssence",
+      "Name": {
+        "DefaultText": "Trawl Orb",
+        "LocalTexts": {
+          "fr": "Orbe Filet"
+        }
+      },
+      "Released": true,
+      "Comment": "Pulls all items on the floor toward you.",
+      "SortOrder": 770
+    },
+    "orb_slumber": {
+      "$type": "RogueEssence.Data.ItemEntrySummary, RogueEssence",
+      "Name": {
+        "DefaultText": "Slumber Orb",
+        "LocalTexts": {
+          "fr": "Orbe Sommeil"
+        }
+      },
+      "Released": true,
+      "Comment": "Puts all enemies on the floor to sleep.",
+      "SortOrder": 928
+    },
+    "key_dimensional_anchor": {
+      "$type": "RogueEssence.Data.ItemEntrySummary, RogueEssence",
+      "Name": {
+        "DefaultText": "Dimensional Anchor",
+        "LocalTexts": {
+          "fr": "Ancre Dimensionnelle"
+        }
+      },
+      "Released": true,
+      "Comment": "An ancient device that stabilizes dimensional boundaries. Found in the Underground City. It resonate",
+      "SortOrder": 695
+    },
+    "key_time_crest": {
+      "$type": "RogueEssence.Data.ItemEntrySummary, RogueEssence",
+      "Name": {
+        "DefaultText": "Time Crest",
+        "LocalTexts": {
+          "fr": "Creste Temporelle"
+        }
+      },
+      "Released": true,
+      "Comment": "A fragment of Dialga's power. Allows control over temporal energy. Earned after purifying the corrup",
+      "SortOrder": 857
+    },
+    "key_space_pearl": {
+      "$type": "RogueEssence.Data.ItemEntrySummary, RogueEssence",
+      "Name": {
+        "DefaultText": "Space Pearl",
+        "LocalTexts": {
+          "fr": "Perle Spatiale"
+        }
+      },
+      "Released": true,
+      "Comment": "A fragment of Palkia's power. Allows manipulation of spatial dimensions. Gifted by Palkia in the Spa",
+      "SortOrder": 12
+    },
+    "key_origin_plate": {
+      "$type": "RogueEssence.Data.ItemEntrySummary, RogueEssence",
+      "Name": {
+        "DefaultText": "Origin Plate",
+        "LocalTexts": {
+          "fr": "Plaque Originelle"
+        }
+      },
+      "Released": true,
+      "Comment": "The ultimate artifact. Channel of Arceus's creation power. Required to seal the Primordial Chaos.",
+      "SortOrder": 414
+    },
+    "key_dream_torch": {
+      "$type": "RogueEssence.Data.ItemEntrySummary, RogueEssence",
+      "Name": {
+        "DefaultText": "Dream Torch",
+        "LocalTexts": {
+          "fr": "Torche Reve"
+        }
+      },
+      "Released": true,
+      "Comment": "A torch that burns with dream energy. Essential for navigating the Dream Dimension and purifying nig",
+      "SortOrder": 813
+    },
+    "key_ancient_recording": {
+      "$type": "RogueEssence.Data.ItemEntrySummary, RogueEssence",
+      "Name": {
+        "DefaultText": "Ancient Recording",
+        "LocalTexts": {
+          "fr": "Enregistrement Ancien"
+        }
+      },
+      "Released": true,
+      "Comment": "A prehistoric recording from the first Collapse. Contains information about the hero's past life and",
+      "SortOrder": 52
+    },
+    "key_guardian_seal": {
+      "$type": "RogueEssence.Data.ItemEntrySummary, RogueEssence",
+      "Name": {
+        "DefaultText": "Guardian Seal",
+        "LocalTexts": {
+          "fr": "Sceau Gardien"
+        }
+      },
+      "Released": true,
+      "Comment": "A seal placed by the ancient Claydol guardian. Protects against dimensional distortion.",
+      "SortOrder": 438
+    },
+    "key_temporal_shard": {
+      "$type": "RogueEssence.Data.ItemEntrySummary, RogueEssence",
+      "Name": {
+        "DefaultText": "Temporal Shard",
+        "LocalTexts": {
+          "fr": "Eclat Temporel"
+        }
+      },
+      "Released": true,
+      "Comment": "A shard of crystallized time. Evidence of the dimensional Collapse affecting reality.",
+      "SortOrder": 113
+    },
+    "key_griseous_orb": {
+      "$type": "RogueEssence.Data.ItemEntrySummary, RogueEssence",
+      "Name": {
+        "DefaultText": "Griseous Orb",
+        "LocalTexts": {
+          "fr": "Orbe Griseous"
+        }
+      },
+      "Released": true,
+      "Comment": "The orb that allows Giratina to change form. Symbol of the Distortion World's balance.",
+      "SortOrder": 119
+    },
+    "food_apple": {
+      "$type": "RogueEssence.Data.ItemEntrySummary, RogueEssence",
+      "Name": {
+        "DefaultText": "Apple",
+        "LocalTexts": {
+          "fr": "Pomme"
+        }
+      },
+      "Released": true,
+      "Comment": "A juicy apple that restores 10 HP.",
+      "SortOrder": 192
+    },
+    "food_big_apple": {
+      "$type": "RogueEssence.Data.ItemEntrySummary, RogueEssence",
+      "Name": {
+        "DefaultText": "Big Apple",
+        "LocalTexts": {
+          "fr": "Grosse Pomme"
+        }
+      },
+      "Released": true,
+      "Comment": "A large apple that restores 30 HP.",
+      "SortOrder": 362
+    },
+    "throw_gravelerock": {
+      "$type": "RogueEssence.Data.ItemEntrySummary, RogueEssence",
+      "Name": {
+        "DefaultText": "Gravelerock",
+        "LocalTexts": {
+          "fr": "Roche"
+        }
+      },
+      "Released": true,
+      "Comment": "A rock that deals damage when thrown. Can hit from a distance.",
+      "SortOrder": 856
+    },
+    "throw_geo_pebble": {
+      "$type": "RogueEssence.Data.ItemEntrySummary, RogueEssence",
+      "Name": {
+        "DefaultText": "Geo Pebble",
+        "LocalTexts": {
+          "fr": "Caillou"
+        }
+      },
+      "Released": true,
+      "Comment": "A small pebble that deals minor damage when thrown.",
+      "SortOrder": 69
+    },
+    "throw_stick": {
+      "$type": "RogueEssence.Data.ItemEntrySummary, RogueEssence",
+      "Name": {
+        "DefaultText": "Stick",
+        "LocalTexts": {
+          "fr": "Batonn"
+        }
+      },
+      "Released": true,
+      "Comment": "A stick that can be thrown to hit enemies.",
+      "SortOrder": 996
+    },
+    "throw_golden_seed": {
+      "$type": "RogueEssence.Data.ItemEntrySummary, RogueEssence",
+      "Name": {
+        "DefaultText": "Golden Seed",
+        "LocalTexts": {
+          "fr": "Graine Doree"
+        }
+      },
+      "Released": true,
+      "Comment": "A seed of extraordinary value. Temporarily boosts stats when held.",
+      "SortOrder": 351
+    },
+    "gummi_clear": {
+      "$type": "RogueEssence.Data.ItemEntrySummary, RogueEssence",
+      "Name": {
+        "DefaultText": "Clear Gummi",
+        "LocalTexts": {
+          "fr": "Gelatine Transparente"
+        }
+      },
+      "Released": true,
+      "Comment": "A Gummi that raises all stats slightly. The type of Gummi determines which stats.",
+      "SortOrder": 614
+    },
+    "gummi_gold": {
+      "$type": "RogueEssence.Data.ItemEntrySummary, RogueEssence",
+      "Name": {
+        "DefaultText": "Gold Gummi",
+        "LocalTexts": {
+          "fr": "Gelatine Or"
+        }
+      },
+      "Released": true,
+      "Comment": "A rare Gummi that raises all stats significantly.",
+      "SortOrder": 491
+    }
+  }
+}

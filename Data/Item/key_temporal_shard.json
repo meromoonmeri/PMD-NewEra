@@ -1,0 +1,19 @@
+{
+  "Version": "0.7.18.1",
+  "Object": {
+    "$type": "PMDC.Data.ItemData, PMDC",
+    "Name": {
+      "DefaultText": "Temporal Shard",
+      "LocalTexts": {
+        "fr": "Eclat Temporel"
+      }
+    },
+    "Released": true,
+    "Comment": "A shard of crystallized time. Evidence of the dimensional Collapse affecting reality.",
+    "Desc": {
+      "DefaultText": "A shard of crystallized time. Evidence of the dimensional Collapse affecting reality.",
+      "LocalTexts": {}
+    },
+    "SortOrder": 113
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "Version": "0.7.18.1",
+  "Object": {
+    "$type": "PMDC.Data.ItemData, PMDC",
+    "Name": {
+      "DefaultText": "Griseous Orb",
+      "LocalTexts": {
+        "fr": "Orbe Griseous"
+      }
+    },
+    "Released": true,
+    "Comment": "The orb that allows Giratina to change form. Symbol of the Distortion World's balance.",
+    "Desc": {
+      "DefaultText": "The orb that allows Giratina to change form. Symbol of the Distortion World's balance.",
+      "LocalTexts": {}
+    },
+    "SortOrder": 119
+  }
+}

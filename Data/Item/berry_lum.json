@@ -1,0 +1,19 @@
+{
+  "Version": "0.7.18.1",
+  "Object": {
+    "$type": "PMDC.Data.ItemData, PMDC",
+    "Name": {
+      "DefaultText": "Lum Berry",
+      "LocalTexts": {
+        "fr": "Baie Maron"
+      }
+    },
+    "Released": true,
+    "Comment": "Cures all status conditions.",
+    "Desc": {
+      "DefaultText": "Cures all status conditions.",
+      "LocalTexts": {}
+    },
+    "SortOrder": 994
+  }
+}
