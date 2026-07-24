@@ -67,7 +67,7 @@ function misty_reach_forest.IntroCutscene()
     
     -- Chapter title card
     local coro1 = TASK:BranchCoroutine(function()
-        UI:WaitShowTitle("Chapter 1\n\nAwakening in a Strange World\n", 20)
+        UI:WaitShowTitle("Chapitre 1\n\nRéveil dans un Monde Étrange\n", 20)
         GAME:WaitFrames(180)
         UI:WaitHideTitle(20)
     end)
@@ -83,9 +83,9 @@ function misty_reach_forest.IntroCutscene()
     -- Hero wakes up
     UI:WaitShowVoiceOver(".............", -1)
     GAME:WaitFrames(30)
-    UI:WaitShowVoiceOver("Where... am I?", -1)
+    UI:WaitShowVoiceOver("Où... suis-je ?", -1)
     GAME:WaitFrames(30)
-    UI:WaitShowVoiceOver("My head... everything is spinning...", -1)
+    UI:WaitShowVoiceOver("Ma tête... tout tourbillonne...", -1)
     
     GAME:WaitFrames(60)
     GROUND:CharSetAnim(hero, 'Idle', true)
@@ -94,13 +94,13 @@ function misty_reach_forest.IntroCutscene()
     SOUND:PlayBGM('Mystifying Forest.ogg', true)
     
     -- Hero realizes they are a Pokemon
-    UI:WaitShowDialogue("Ugh... what happened?")
+    UI:WaitShowDialogue("Urgh... qu'est-ce qui s'est passé ?")
     GAME:WaitFrames(20)
-    UI:WaitShowDialogue("These paws... this body...")
-    UI:WaitShowDialogue("I am... a Pokemon?!")
+    UI:WaitShowDialogue("Ces pattes... ce corps...")
+    UI:WaitShowDialogue("Je suis... un Pokémon ?!")
     GAME:WaitFrames(20)
-    UI:WaitShowDialogue("That cannot be right. I was... I was human, was I not?")
-    UI:WaitShowDialogue("Why can I not remember anything clearly?")
+    UI:WaitShowDialogue("Ça ne peut pas être vrai. J'étais... j'étais humain, non ?")
+    UI:WaitShowDialogue("Pourquoi est-ce que je ne me souviens de rien clairement ?")
     
     GAME:WaitFrames(30)
     
@@ -113,44 +113,44 @@ function misty_reach_forest.IntroCutscene()
     
     -- Partner calls out
     UI:SetSpeaker(ScriptSpeaker("partner", "???"))
-    UI:WaitShowDialogue("Hey! Are you okay over there?!")
+    UI:WaitShowDialogue("Hé ! Ça va là-dedans ?!")
     
     -- Partner approaches
     GROUND:MoveToPosition(partner, marker.Position.X - 20, marker.Position.Y, false, 1)
     GROUND:CharAnimateTurnTo(partner, Direction.Down, 4)
     
     UI:SetSpeaker(ScriptSpeaker("partner", "???"))
-    UI:WaitShowDialogue("Oh good, you are awake! I was worried when I found you lying here.")
+    UI:WaitShowDialogue("Oh, tu es réveillé ! J'ai eu peur en te trouvant allongé ici.")
     GAME:WaitFrames(20)
-    UI:WaitShowDialogue("This forest can be dangerous for explorers who are not prepared.")
-    UI:WaitShowDialogue("My name is Litwick. I am an explorer-in-training at Guild New Era.")
+    UI:WaitShowDialogue("Cette forêt peut être dangereuse pour les explorers qui ne sont pas préparés.")
+    UI:WaitShowDialogue("Je m'appelle Lumibell. Je suis un explorateur en formation à la Guilde Nouvelle Ère.")
     
     GAME:WaitFrames(20)
-    UI:WaitShowDialogue("What about you? Do you remember how you got here?")
+    UI:WaitShowDialogue("Et toi ? Tu te souviens de comment tu es arrivé ici ?")
     
     -- Hero responds
     UI:SetSpeaker(CH('PLAYER'))
-    UI:WaitShowDialogue("I... I do not remember much of anything, actually.")
-    UI:WaitShowDialogue("I know I was not always a Pokemon, but everything else is a blur.")
+    UI:WaitShowDialogue("Je... je ne me souviens pas de grand-chose, en fait.")
+    UI:WaitShowDialogue("Je sais que je n'ai pas toujours été un Pokémon, mais tout le reste est flou.")
     GAME:WaitFrames(20)
-    UI:WaitShowDialogue("The only thing I can clearly remember is... a promise.")
+    UI:WaitShowDialogue("La seule chose dont je me souviens clairement, c'est... une promesse.")
     
-    UI:SetSpeaker(ScriptSpeaker("partner", "Litwick"))
-    UI:WaitShowDialogue("A promise? To whom?")
+    UI:SetSpeaker(ScriptSpeaker("partner", "Lumibell"))
+    UI:WaitShowDialogue("Une promesse ? Envers qui ?")
     
     UI:SetSpeaker(CH('PLAYER'))
-    UI:WaitShowDialogue("I... I do not know. Someone important. But I cannot remember who.")
-    UI:WaitShowDialogue("It feels like it was a very long time ago...")
+    UI:WaitShowDialogue("Je... je ne sais pas. Quelqu'un d'important. Mais je ne me rappelle plus qui.")
+    UI:WaitShowDialogue("On dirait que c'était il y a très longtemps...")
     
     GAME:WaitFrames(20)
     
-    UI:SetSpeaker(ScriptSpeaker("partner", "Litwick"))
-    UI:WaitShowDialogue("That sounds really important. Maybe your memories will come back in time!")
-    UI:WaitShowDialogue("In the meantime, you should come with me to New Era City.")
-    UI:WaitShowDialogue("But first, we need to get through this forest safely.")
+    UI:SetSpeaker(ScriptSpeaker("partner", "Lumibell"))
+    UI:WaitShowDialogue("Ça a l'air vraiment important. Peut-être que tes souvenirs reviendront avec le temps !")
+    UI:WaitShowDialogue("En attendant, tu devrais venir avec moi à la Cité Nouvelle Ère.")
+    UI:WaitShowDialogue("Mais d'abord, il faut traverser cette forêt en sécurité.")
     
     GAME:WaitFrames(20)
-    UI:WaitShowDialogue("Stay close to me, okay? I will protect you!")
+    UI:WaitShowDialogue("Reste près de moi, d'accord ? Je te protégerai !")
     
     GAME:CutsceneMode(false)
     
@@ -184,9 +184,9 @@ function misty_reach_forest.PartnerFindsHero()
     GAME:CutsceneMode(true)
     UI:ResetSpeaker()
     
-    UI:SetSpeaker(ScriptSpeaker("partner", "Litwick"))
-    UI:WaitShowDialogue("Alright! The exit should be just ahead.")
-    UI:WaitShowDialogue("Stay on your toes - there can be hostile Pokemon in the deeper parts!")
+    UI:SetSpeaker(ScriptSpeaker("partner", "Lumibell"))
+    UI:WaitShowDialogue("C'est bon ! La sortie devrait être juste devant.")
+    UI:WaitShowDialogue("Reste sur tes gardes — il peut y avoir des Pokémon hostiles dans les parties profondes !")
     
     GAME:CutsceneMode(false)
 end
@@ -198,9 +198,9 @@ function misty_reach_forest.WipedInForest()
     GAME:FadeIn(40)
     GAME:CutsceneMode(true)
     
-    UI:SetSpeaker(ScriptSpeaker("partner", "Litwick"))
-    UI:WaitShowDialogue("Oh no, we got separated! Are you okay?")
-    UI:WaitShowDialogue("Do not worry - we will make it through together this time!")
+    UI:SetSpeaker(ScriptSpeaker("partner", "Lumibell"))
+    UI:WaitShowDialogue("Oh non, on s'est séparés ! Ça va ?")
+    UI:WaitShowDialogue("Ne t'inquiète pas — on traversera ensemble cette fois-ci !")
     
     GAME:CutsceneMode(false)
 end
@@ -210,7 +210,7 @@ function misty_reach_forest.GenericEnding()
     
     GAME:CutsceneMode(true)
     UI:ResetSpeaker()
-    UI:WaitShowTitle("Misty Reach Forest", 20)
+    UI:WaitShowTitle("Forêt de la Brume Murmurante", 20)
     GAME:WaitFrames(60)
     UI:WaitHideTitle(20)
     GAME:FadeIn(40)
@@ -219,8 +219,8 @@ function misty_reach_forest.GenericEnding()
     
     GAME:WaitFrames(20)
     UI:SetCenter(true)
-    UI:WaitShowDialogue("There does not appear to be anything else of interest here.")
-    UI:WaitShowDialogue("It is time to move on.")
+    UI:WaitShowDialogue("Il ne semble plus y avoir rien d'intéressant ici.")
+    UI:WaitShowDialogue("Il est temps de partir.")
     GAME:WaitFrames(40)
     UI:SetCenter(false)
     

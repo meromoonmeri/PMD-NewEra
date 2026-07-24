@@ -62,23 +62,23 @@ function new_era_city.Guildmaster_Dragonite_Action(chara, activator)
     local chapter = SV.ChapterProgression.Chapter
     
     if chapter == 0 or not SV.Chapter1.ArrivedAtCity then
-        UI:WaitShowDialogue("Welcome, young one. I am Guildmaster Dragonite.")
-        UI:WaitShowDialogue("This is New Era City, the heart of our exploration guild.")
-        UI:WaitShowDialogue("If you wish to join the guild, speak to Lopunny at the desk.")
+        UI:WaitShowDialogue("Bienvenue, petit. Je suis le Maître de Guilde Drattak.")
+        UI:WaitShowDialogue("Voici la Cité Nouvelle Ère, le cœur de notre guilde d'exploration.")
+        UI:WaitShowDialogue("Si tu souhaites rejoindre la guilde, parle à Lockpin au bureau.")
     elseif chapter <= 3 then
-        UI:WaitShowDialogue("How goes your exploration? The bulletin board has new missions.")
+        UI:WaitShowDialogue("Comment se passe ton exploration ? Le tableau d'affichage a de nouvelles missions.")
     elseif chapter >= 4 and chapter <= 10 then
-        UI:WaitShowDialogue("These are troubling times. The Collapse threatens us all.")
-        UI:WaitShowDialogue("But I believe in you and your team. Stay strong.")
+        UI:WaitShowDialogue("Ce sont des temps difficiles. L'Effondrement nous menace tous.")
+        UI:WaitShowDialogue("Mais j'ai foi en toi et ton équipe. Reste fort.")
     elseif chapter >= 11 and chapter <= 18 then
-        UI:WaitShowDialogue("The dimensional crisis grows worse by the day.")
-        UI:WaitShowDialogue("Please, do what must be done. The world depends on you.")
+        UI:WaitShowDialogue("La crise dimensionnelle s'aggrave de jour en jour.")
+        UI:WaitShowDialogue("S'il te plaît, fais ce qui doit être fait. Le monde compte sur toi.")
     elseif chapter >= 19 then
-        UI:WaitShowDialogue("Everything hangs in the balance now.")
-        UI:WaitShowDialogue("Go to the Dream Dimension. Stop the Primordial Chaos.")
+        UI:WaitShowDialogue("Tout est en équilibre précaire maintenant.")
+        UI:WaitShowDialogue("Va dans la Dimension des Rêves. Arrête le Chaos Primordial.")
     elseif chapter >= 20 and SV.Chapter20.Complete then
-        UI:WaitShowDialogue("You did it. The world is saved.")
-        UI:WaitShowDialogue("Thank you, from the bottom of my heart.")
+        UI:WaitShowDialogue("Tu l'as fait. Le monde est sauvé.")
+        UI:WaitShowDialogue("Merci, du fond du cœur.")
     end
     
     GAME:CutsceneMode(false)
@@ -89,22 +89,22 @@ function new_era_city.Lopunny_Action(chara, activator)
     UI:SetSpeaker(Lopunny)
     
     if not SV.Chapter2.JoinedGuild then
-        UI:WaitShowDialogue("Oh! A new face! Are you here to join the guild?")
-        UI:WaitShowDialogue("Wonderful! Let me register your exploration team right away!")
-        UI:ChoiceMenuYesNo("Ready to register your team?",
+        UI:WaitShowDialogue("Oh ! Un nouveau visage ! Tu es ici pour rejoindre la guilde ?")
+        UI:WaitShowDialogue("Formidable ! Laisse-moi inscrire ton équipe d'exploration tout de suite !")
+        UI:ChoiceMenuYesNo("Prêt à inscrire ton équipe ?",
             function(result)
                 if result then
                     SV.Chapter2.JoinedGuild = true
                     SV.ChapterProgression.Chapter = 2
-                    UI:WaitShowDialogue("Excellent! Welcome to Guild New Era!")
-                    UI:WaitShowDialogue("Check the bulletin board for your first mission.")
+                    UI:WaitShowDialogue("Excellent ! Bienvenue à la Guilde Nouvelle Ère !")
+                    UI:WaitShowDialogue("Consulte le tableau d'affichage pour ta première mission.")
                 else
-                    UI:WaitShowDialogue("Take your time! I will be here whenever you are ready.")
+                    UI:WaitShowDialogue("Prends ton temps ! Je serai là quand tu seras prêt.")
                 end
             end)
     else
-        UI:WaitShowDialogue("Good to see you! There are always new missions on the board.")
-        UI:WaitShowDialogue("Stay safe out there!")
+        UI:WaitShowDialogue("Ravi de te voir ! Il y a toujours de nouvelles missions sur le tableau.")
+        UI:WaitShowDialogue("Reste prudent là-dehors !")
     end
     
     GAME:CutsceneMode(false)
@@ -113,16 +113,16 @@ end
 function new_era_city.Cinccino_Action(chara, activator)
     GAME:CutsceneMode(true)
     UI:SetSpeaker(Cinccino)
-    UI:WaitShowDialogue("Welcome to my cafe! Would you like something to eat?")
-    UI:WaitShowDialogue("The Berry Soufflee is my speciality. It will restore your energy!")
+    UI:WaitShowDialogue("Bienvenue dans mon café ! Tu veux manger quelque chose ?")
+    UI:WaitShowDialogue("Le Soufflé Baie est ma spécialité. Ça te remettra l'énergie !")
     GAME:CutsceneMode(false)
 end
 
 function new_era_city.Chansey_Action(chara, activator)
     GAME:CutsceneMode(true)
     UI:SetSpeaker(Chansey)
-    UI:WaitShowDialogue("Oh my! Are you hurt? Let me take a look at you.")
-    UI:WaitShowDialogue("There, there. You are all healed up now!")
+    UI:WaitShowDialogue("Oh mon Dieu ! Tu es blessé ? Laisse-moi te soigner.")
+    UI:WaitShowDialogue("Voilà voilà. Tu es complètement guéri maintenant !")
     GAME:CutsceneMode(false)
 end
 
@@ -132,17 +132,17 @@ function new_era_city.Gothitelle_Action(chara, activator)
     
     local chapter = SV.ChapterProgression.Chapter
     if chapter < 4 then
-        UI:WaitShowDialogue("Welcome to the library. Knowledge is the greatest treasure.")
-        UI:WaitShowDialogue("Feel free to browse. I have texts on every subject imaginable.")
+        UI:WaitShowDialogue("Bienvenue à la bibliothèque. Le savoir est le plus grand trésor.")
+        UI:WaitShowDialogue("N'hésite pas à feuilleter. J'ai des textes sur tous les sujets imaginables.")
     elseif chapter >= 4 and chapter < 8 then
-        UI:WaitShowDialogue("You should read about the Temporal Dimension.")
-        UI:WaitShowDialogue("The ancient texts mention something called 'The Collapse'...")
+        UI:WaitShowDialogue("Tu devrais lire sur la Dimension Temporelle.")
+        UI:WaitShowDialogue("Les textes anciens mentionnent quelque chose appelé 'L'Effondrement'...")
     elseif chapter >= 8 and chapter < 13 then
-        UI:WaitShowDialogue("The truth about your reincarnation... it is all here in the texts.")
-        UI:WaitShowDialogue("The ancient human who sealed the first Collapse.")
+        UI:WaitShowDialogue("La vérité sur ta réincarnation... tout est ici dans ces textes.")
+        UI:WaitShowDialogue("L'humain ancien qui a scellé le premier Effondrement.")
     else
-        UI:WaitShowDialogue("Everything we feared has come to pass.")
-        UI:WaitShowDialogue("But you carry the hope of two lifetimes.")
+        UI:WaitShowDialogue("Tout ce que nous craignions s'est réalisé.")
+        UI:WaitShowDialogue("Mais tu portes l'espoir de deux vies.")
     end
     
     GAME:CutsceneMode(false)
@@ -151,32 +151,32 @@ end
 function new_era_city.Scrafty_Action(chara, activator)
     GAME:CutsceneMode(true)
     UI:SetSpeaker(Scrafty)
-    UI:WaitShowDialogue("Yo! Wanna train? The dojo is always open.")
-    UI:WaitShowDialogue("No pain, no gain! Let us see what you have got!")
+    UI:WaitShowDialogue("Yo ! Tu veux t'entraîner ? Le dojo est toujours ouvert.")
+    UI:WaitShowDialogue("Pas de douleur, pas de gain ! Voyons ce que tu as dans le ventre !")
     GAME:CutsceneMode(false)
 end
 
 function new_era_city.Meowstic_Action(chara, activator)
     GAME:CutsceneMode(true)
     UI:SetSpeaker(Meowstic)
-    UI:WaitShowDialogue("Welcome... I sense great destiny surrounding you.")
-    UI:WaitShowDialogue("The stars whisper of a coming catastrophe... and of a hero who can prevent it.")
+    UI:WaitShowDialogue("Bienvenue... Je sens un grand destin t'entourer.")
+    UI:WaitShowDialogue("Les étoiles murmurent une catastrophe à venir... et d'un héros qui peut l'empêcher.")
     GAME:CutsceneMode(false)
 end
 
 function new_era_city.Sunflora_Action(chara, activator)
     GAME:CutsceneMode(true)
     UI:SetSpeaker(Sunflora)
-    UI:WaitShowDialogue("Oh hello! Welcome to the garden!")
-    UI:WaitShowDialogue("Feel free to pick some berries. They are free for explorers!")
+    UI:WaitShowDialogue("Oh bonjour ! Bienvenue au jardin !")
+    UI:WaitShowDialogue("Sers-toi librement en baies. C'est gratuit pour les explorateurs !")
     GAME:CutsceneMode(false)
 end
 
 function new_era_city.Persian_Action(chara, activator)
     GAME:CutsceneMode(true)
     UI:SetSpeaker(Persian)
-    UI:WaitShowDialogue("Bank and Storage, at your service!")
-    UI:WaitShowDialogue("Your money and items are safe here, even if you faint in a dungeon.")
+    UI:WaitShowDialogue("Banque et Stockage, à ton service !")
+    UI:WaitShowDialogue("Ton argent et tes objets sont en sécurité ici, même si tu t'évanouis dans un donjon.")
     GAME:CutsceneMode(false)
 end
 
@@ -185,12 +185,12 @@ function new_era_city.Absol_Action(chara, activator)
     UI:SetSpeaker(Absol)
     
     if SV.Chapter4.MetAbsol then
-        UI:WaitShowDialogue("The Collapse grows stronger. I can feel it.")
-        UI:WaitShowDialogue("My disaster sense has never been this active before.")
-        UI:WaitShowDialogue("Please be careful out there.")
+        UI:WaitShowDialogue("L'Effondrement s'intensifie. Je le sens.")
+        UI:WaitShowDialogue("Mon sens du danger n'a jamais été aussi actif.")
+        UI:WaitShowDialogue("Fais attention là-dehors, s'il te plaît.")
     else
         UI:WaitShowDialogue("...")
-        UI:WaitShowDialogue("You carry a strange resonance. Like a memory from another life.")
+        UI:WaitShowDialogue("Tu portes une étrange résonance. Comme un souvenir d'une autre vie.")
     end
     
     GAME:CutsceneMode(false)
