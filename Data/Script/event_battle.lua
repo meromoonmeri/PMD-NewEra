@@ -96,12 +96,12 @@ function BATTLE_SCRIPT.EscortInteract(owner, ownerChar, context, args)
   
   if job.Type == COMMON.MISSION_TYPE_EXPLORATION then
 		local floor = MISSION_GEN.STAIR_TYPE[job.Zone] .. '[color=#00FFFF]' .. tostring(job.Floor) .. '[color]' .. "F"
-		UI:WaitShowDialogue("Please, take me to " .. floor .. "!")
+		UI:WaitShowDialogue("S'il vous plaît, emmènez-moi à " .. floor .. "!")
   elseif job.Type == COMMON.MISSION_TYPE_ESCORT then
     if job.Special == MISSION_GEN.SPECIAL_CLIENT_LOVER then
-	  UI:WaitShowDialogue("Please, bring me to my love! I'm counting on you!")
+	  UI:WaitShowDialogue("S'il vous plaît, amenez-moi vers mon amour ! Je compte sur vous !")
 	else
-	  UI:WaitShowDialogue("I'm counting on you to bring me to " .. _DATA:GetMonster(job.Target):GetColoredName() .. "!") 
+	  UI:WaitShowDialogue("Je compte sur vous pour m'emmîner voir " .. _DATA:GetMonster(job.Target):GetColoredName() .. "!") 
 	end
    end
   context.Target.CharDir = oldDir
@@ -132,7 +132,7 @@ function BATTLE_SCRIPT.RescueReached(owner, ownerChar, context, args)
 end
 
 function RescueCheck(context, targetName, mission)
-	UI:ChoiceMenuYesNo("Yes! You've found " .. targetName .. "!\nDo you want to use your badge to rescue " .. targetName .. "?", false)
+	UI:ChoiceMenuYesNo("Oui ! Vous avez trouvé " .. targetName .. " !\nVoulez-vous utiliser votre badge pour secourir " .. targetName .. " ?", false)
 	UI:WaitForChoice()
 	local use_badge = UI:ChoiceResult()
 	if use_badge then 
@@ -143,27 +143,27 @@ function RescueCheck(context, targetName, mission)
 		_DUNGEON.ShowMap = _DUNGEON.MinimapState.None
 		GAME:WaitFrames(20)
 		mission.Completion = 1
-		UI:WaitShowDialogue("Your badge shines on " .. targetName .. ", and ".. targetName .. " is transported away magically!" )
+		UI:WaitShowDialogue("Votre badge brille sur " .. targetName .. ", et ".. targetName .. " est téléporté par magie !" )
 		GAME:WaitFrames(20)
 		UI:SetSpeaker(context.Target)
 		
 		--different responses for special targets
 		if mission.Special == MISSION_GEN.SPECIAL_CLIENT_CHILD then 
 			UI:SetSpeakerEmotion("Joyous")
-			UI:WaitShowDialogue("Thank you for rescuing me! This place was so scary! I can't wait to see my family again!")
+			UI:WaitShowDialogue("Merci de m'avoir sauvé ! Cet endroit était si effrayant ! J'ai hâte de revoir ma famille !")
 		elseif mission.Special == MISSION_GEN.SPECIAL_CLIENT_FRIEND then
-			UI:WaitShowDialogue("Oh, my friend sent you to rescue me? Thank goodness! We'll see you at the guild later to say thanks!")
+			UI:WaitShowDialogue("Oh, mon ami vous a envoyés pour me secourir ? Dieu merci ! On se verra à la guilde plus tard pour vous remercier !")
 		elseif mission.Special == MISSION_GEN.SPECIAL_CLIENT_RIVAL then 
-			UI:WaitShowDialogue("Tch, my rival sent you to rescue me, huh? Well, thank you. We'll reward you later at the guild.")		
+			UI:WaitShowDialogue("Tch, c'est mon rival qui vous a envoyés pour me sauver, hein ? Eh bien, merci. On vous récompensera plus tard à la guilde.")		
 		elseif mission.Special == MISSION_GEN.SPECIAL_CLIENT_LOVER then 
 			UI:SetSpeakerEmotion("Joyous")
-			UI:WaitShowDialogue("Oh, my beloved " .. _DATA:GetMonster(mission.Client):GetColoredName() .. " sent you to rescue me? I can't wait to reunite with them!")
+			UI:WaitShowDialogue("Oh, mon bien-aimé " .. _DATA:GetMonster(mission.Client):GetColoredName() .. " vous a envoyés pour me secourir ? J'ai tellement hâte de le retrouver !")
 		else
-			UI:WaitShowDialogue("Thanks for the rescue!\nI'll see you at the guild after with your reward!")
+			UI:WaitShowDialogue("Merci pour le sauvetage !\nJe vous retrouverai à la guilde pour vous donner votre récompense !")
 			end
 		GAME:WaitFrames(20)
 		UI:ResetSpeaker()
-		UI:WaitShowDialogue(targetName .. " escaped from the dungeon!")
+		UI:WaitShowDialogue(targetName .. " a réussi à s'échapper du donjon !")
 		GAME:WaitFrames(20)
 		-- warp out
 		TASK:WaitTask(_DUNGEON:ProcessBattleFX(context.Target, context.Target, _DATA.SendHomeFX))
@@ -178,19 +178,19 @@ function RescueCheck(context, targetName, mission)
 		UI:SetSpeaker(context.Target)
 		if mission.Special == MISSION_GEN.SPECIAL_CLIENT_CHILD then 
 			UI:SetSpeakerEmotion("Crying")
-			UI:WaitShowDialogue("Waaah! It's s-scary here! P-please help me!")
+			UI:WaitShowDialogue("Bouhouhou ! C'est s-si effrayant ici ! P-pénitiez, aidez-moi !")
 		elseif mission.Special == MISSION_GEN.SPECIAL_CLIENT_FRIEND then
 			UI:SetSpeakerEmotion("Surprised")
-			UI:WaitShowDialogue("Please don't leave me here! My friend is probably worried sick!")
+			UI:WaitShowDialogue("Ne me laissez pas ici, s'il vous plaît ! Mon ami doit s'inquiéter à mourir !")
 		elseif mission.Special == MISSION_GEN.SPECIAL_CLIENT_RIVAL then 
 			UI:SetSpeakerEmotion("Worried")
-			UI:WaitShowDialogue("Woah, don't just leave me hanging here!")	
+			UI:WaitShowDialogue("Hé, ne me laissez pas en plan comme ça !")	
 		elseif mission.Special == MISSION_GEN.SPECIAL_CLIENT_LOVER then 
 			UI:SetSpeakerEmotion("Worried")
-			UI:WaitShowDialogue("Please, get me out of here! I just want to see my dear " .. _DATA:GetMonster(mission.Client):GetColoredName() .. " again!")
+			UI:WaitShowDialogue("S'il vous plaît, sortez-moi d'ici ! Je veux juste revoir mon cher " .. _DATA:GetMonster(mission.Client):GetColoredName() .. " !")
 		else
 			UI:SetSpeakerEmotion("Surprised")
-			UI:WaitShowDialogue("H-hey! Don't just leave me here!")
+			UI:WaitShowDialogue("H-hé ! Ne me laissez pas ici comme ça !")
 		end
 		--change map setting back to what it was
 		_DUNGEON.ShowMap = map_setting
@@ -205,7 +205,7 @@ function DeliveryCheck(context, targetName, mission)
 	local item_name =  RogueEssence.Dungeon.InvItem(mission.Item):GetDisplayName()
 
 	if has_item then
-		UI:ChoiceMenuYesNo("Yes! You've located " .. targetName .. "!" .. " Do you want to deliver the requested " .. item_name .. " to " .. targetName .. "?")
+		UI:ChoiceMenuYesNo("Oui ! Vous avez localisé " .. targetName .. "!" .. " Voulez-vous livrer le " .. item_name .. " demandé à " .. targetName .. " ?")
 		UI:WaitForChoice()
 		local deliver_item = UI:ChoiceResult()
 		if deliver_item then
@@ -222,7 +222,7 @@ function DeliveryCheck(context, targetName, mission)
 			end
 			GAME:WaitFrames(20)
 			UI:SetSpeaker(context.Target)
-			UI:WaitShowDialogue("Thanks for the " .. item_name .. "!\n I'll see you at the guild after with your reward!")
+			UI:WaitShowDialogue("Merci pour le " .. item_name .. " !\nJe vous retrouverai à la guilde pour votre récompense !")
 			GAME:WaitFrames(20)
 			UI:ResetSpeaker()
 			UI:WaitShowDialogue(targetName .. " escaped from the dungeon!")
@@ -238,19 +238,19 @@ function DeliveryCheck(context, targetName, mission)
 			GAME:WaitFrames(20)
 			UI:SetSpeaker(context.Target)
 			UI:SetSpeakerEmotion("Sad")
-			UI:WaitShowDialogue("Oh, please! I really need that " .. item_name .. "...")
+			UI:WaitShowDialogue("Oh, s'il vous plaît ! J'ai vraiment besoin de ce " .. item_name .. "...")
 			--change map setting back to what it was
 			_DUNGEON.ShowMap = map_setting
 			GAME:WaitFrames(20)		end
 	else
-		UI:WaitShowDialogue("The requested " .. item_name .. " isn't in the Treasure Bag.\nThere is nothing to deliver.")
+		UI:WaitShowDialogue("Le " .. item_name .. " demandé n'est pas dans le Sac à Trésors.\nIl n'y a rien à livrer.")
 		--quickly hide the minimap for the 20 frame pause
 		local map_setting = _DUNGEON.ShowMap
 		_DUNGEON.ShowMap = _DUNGEON.MinimapState.None
 		GAME:WaitFrames(20)
 		UI:SetSpeaker(context.Target)
 		UI:SetSpeakerEmotion("Sad")
-		UI:WaitShowDialogue("Huh, you don't have the " .. item_name .. "? That's too bad...")
+		UI:WaitShowDialogue("Ah, vous n'avez pas le " .. item_name .. " ? C'est dommage...")
 		--change map setting back to what it was
 		_DUNGEON.ShowMap = map_setting
 		GAME:WaitFrames(20)
@@ -274,17 +274,17 @@ function BATTLE_SCRIPT.EscortRescueReached(owner, ownerChar, context, args)
 				--Mark mission completion flags
 				SV.TemporaryFlags.MissionCompleted = true
 				mission.Completion = 1
-				UI:WaitShowDialogue("Yes! You completed " .. escortName .. "'s escort mission.\n" .. escortName .. " is delighted!")
+				UI:WaitShowDialogue("Oui ! Vous avez accompli la mission d'escorte de " .. escortName .. ".\n" .. escortName .. " est ravi !")
 				--Clear but remember minimap state
 				SV.TemporaryFlags.PriorMapSetting = _DUNGEON.ShowMap
 				_DUNGEON.ShowMap = _DUNGEON.MinimapState.None
 				GAME:WaitFrames(20)
 				
 				UI:SetSpeaker(escort)
-				UI:WaitShowDialogue("Thank you for escorting me to " .. _DATA:GetMonster(context.Target.CurrentForm.Species):GetColoredName() .. "!")
+				UI:WaitShowDialogue("Merci de m'avoir escorté jusqu'à " .. _DATA:GetMonster(context.Target.CurrentForm.Species):GetColoredName() .. " !")
 				GAME:WaitFrames(20)
 				UI:ResetSpeaker()
-				UI:WaitShowDialogue(escortName .. "'s twosome left the dungeon!")
+				UI:WaitShowDialogue(escortName .. " et son acolyte ont quitté le donjon !")
 				GAME:WaitFrames(20)
 
 				--Set max team size to 4 as the guest is no longer "taking" up a party slot
@@ -301,7 +301,7 @@ function BATTLE_SCRIPT.EscortRescueReached(owner, ownerChar, context, args)
 				GAME:WaitFrames(50)
 				GeneralFunctions.AskMissionWarpOut()
 			else
-				UI:WaitShowDialogue(escortName .. " doesn't seem to be around...")
+				UI:WaitShowDialogue(escortName .. " ne semble pas être dans les parages...")
 			end
 		end
   end
@@ -318,12 +318,12 @@ function BATTLE_SCRIPT.CountTalkTest(owner, ownerChar, context, args)
   UI:SetSpeaker(context.Target)
   
   if tbl.TalkAmount == nil then
-    UI:WaitShowDialogue("I will remember how many times I've been talked to.")
+    UI:WaitShowDialogue("Je vais me souvenir du nombre de fois qu'on m'a parlé.")
 	tbl.TalkAmount = 1
   else
 	tbl.TalkAmount = tbl.TalkAmount + 1
   end
-  UI:WaitShowDialogue("You've talked to me "..tostring(tbl.TalkAmount).." times.")
+  UI:WaitShowDialogue("Vous m'avez parlé "..tostring(tbl.TalkAmount).." fois.")
   
   context.Target.CharDir = oldDir
 end
@@ -676,7 +676,7 @@ function BATTLE_SCRIPT.SenseiInteract(owner, ownerChar, context, args)
 
 	local olddir = target.CharDir
 	DUNGEON:CharTurnToChar(target, chara)
-	UI:BeginChoiceMenu("Do you need something,[pause=10] my student?", {"Help", "Reset floor", "Nothing"}, 3, 3)
+	UI:BeginChoiceMenu("Avez-vous besoin de quelque chose,[pause=10] mon élève ?", {"Aide", "Réinitialiser l'étage", "Rien"}, 3, 3)
 	UI:WaitForChoice()
 	local result = UI:ChoiceResult()
 	if result == 1 then 
@@ -684,7 +684,7 @@ function BATTLE_SCRIPT.SenseiInteract(owner, ownerChar, context, args)
 		SV.Tutorial.Progression = -1 --temporarily clear progression flag so speech can happen. -1 to prevent pausing before script trigger
 		BeginnerLessonSpeechHelper(owner, ownerChar, target, args)
 	elseif result == 2 then
-		UI:WaitShowDialogue("Wahtah![pause=0] Very well![pause=0] Allow me to reset this floor!")
+		UI:WaitShowDialogue("Wahtah ![pause=0] Très bien ![pause=0] Laissez-moi réinitialiser cet étage !")
 		GAME:WaitFrames(20)
 		UI:SetSpeakerEmotion("Determined")
 		UI:WaitShowDialogue(".........")
@@ -710,13 +710,13 @@ function BATTLE_SCRIPT.SenseiInteract(owner, ownerChar, context, args)
 	    GAME:WaitFrames(15)
 	    DUNGEON:PlayVFX(emitter, target.MapLoc.X, target.MapLoc.Y)
 	    SOUND:PlayBattleSE("EVT_Battle_Flash")
-		UI:WaitShowTimedDialogue("HWACHA!", 40)		
+		UI:WaitShowTimedDialogue("HOUATCHA !", 40)		
 		--Reset floor
 		local resetEvent = PMDC.Dungeon.ResetFloorEvent()
 		local charaContext = RogueEssence.Dungeon.SingleCharContext(chara)
 		TASK:WaitTask(resetEvent:Apply(owner, ownerChar, charaContext))
 	else 
-		UI:WaitShowDialogue("Hoiyah![pause=0] Onwards with the lesson then!")
+		UI:WaitShowDialogue("Hoiyah ![pause=0] Que la leçon continue alors !")
 	end
 end
 

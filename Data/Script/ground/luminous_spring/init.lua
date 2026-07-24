@@ -126,8 +126,9 @@ function luminous_spring.GenericEnding()
 	--temporary flags are set by the zone script rather than here.
 	GAME:WaitFrames(20)
 	UI:SetCenter(true)
-	UI:WaitShowDialogue("There doesn't appear to be anything of interest here.")
-	UI:WaitShowDialogue("It's impossible to go any further.[pause=0]\nIt's time to go back.")
+	UI:WaitShowDialogue("Il ne semble rien d'intéressant par ici.")
+	UI:WaitShowDialogue("On ne peut pas aller plus loin.[pause=0]\\\\
+Il est temps de faire demi-tour.")
 	UI:SetCenter(false)
 	SOUND:FadeOutBGM(60)
 	GAME:FadeOut(false, 60)

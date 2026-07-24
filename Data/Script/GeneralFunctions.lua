@@ -311,7 +311,15 @@ end
 function GeneralFunctions.HeroDialogue(chara, str, emotion)
 	UI:SetSpeaker('', false, chara.CurrentForm.Species, chara.CurrentForm.Form, chara.CurrentForm.Skin, chara.CurrentForm.Gender)
 	UI:SetSpeakerEmotion(emotion)
-	UI:WaitShowDialogue(str)
+	UI:WaitShowDialogue(🚀 Initializing Z-AI SDK...
+🚀 Sending chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Partie sauvegardée !)
 end
 
 --walking in place to "talk"
@@ -744,7 +752,7 @@ function GeneralFunctions.Monologue(str)
 	UI:ResetSpeaker(false)
 	UI:SetCenter(true)
 	UI:SetAutoFinish(true)
-	UI:WaitShowDialogue(str)
+	UI:WaitShowDialogue(\nPartie sauvegardée ! Retour au titre.)
 	UI:SetAutoFinish(false)
 	UI:SetCenter(false)
 end 
@@ -820,12 +828,12 @@ function GeneralFunctions.PromptSaveAndQuit()
 	if result == 1 then 
 		GAME:GroundSave()
 		UI:ResetSpeaker()
-		UI:WaitShowDialogue("Game saved!")
+		UI:WaitShowDialogue(\nPartie sauvegardée !)
 		GAME:WaitFrames(20)
 	elseif result == 2 then 
 		GAME:GroundSave()
 		UI:ResetSpeaker()
-		UI:WaitShowDialogue("Game saved! Returning to title.")
+		UI:WaitShowDialogue(\nPartie sauvegardée !)
 		GAME:WaitFrames(20)
 		GAME:FadeOut(false, 40)
 		GAME:RestartToTitle()
@@ -835,13 +843,13 @@ end
 
 function GeneralFunctions.PromptSave()
 	UI:ResetSpeaker()
-	UI:ChoiceMenuYesNo("Would you like to save your game?")
+	UI:ChoiceMenuYesNo("Voulez-vous sauvegarder votre partie ?")
 	UI:WaitForChoice()
 	local result = UI:ChoiceResult()
 	if result then 
 		GAME:GroundSave()
 		UI:ResetSpeaker()
-		UI:WaitShowDialogue("Game saved!")
+		UI:WaitShowDialogue(\nPartie sauvegardée ! Retour au titre.)
 		GAME:WaitFrames(20)
 	end
 end
@@ -859,14 +867,14 @@ function GeneralFunctions.PromptChapterSaveAndQuit(ground, marker, ground_id)
 		UI:ResetSpeaker()
 		_DATA.Save.NextDest = RogueEssence.Dungeon.ZoneLoc("master_zone", -1, ground_id, 0)--set next destination to whatever map we were going to go to on a continue. Just in case player quits out after selecting this option.
 		GAME:GroundSave()
-		UI:WaitShowDialogue("Game saved!")
+		UI:WaitShowDialogue(\n\"L'équipe \" .. GAME:GetTeamName()
 		GAME:EnterGroundMap(ground, marker)
 	elseif result == 2 then 
 		UI:ResetSpeaker()
 		GAME:FadeOut(false, 40)
 		_DATA.Save.NextDest = RogueEssence.Dungeon.ZoneLoc("master_zone", -1, ground_id, 0)--set next destination to whatever map we were going to go to on a continue
 		GAME:GroundSave()
-		UI:WaitShowDialogue("Game saved! Returning to title.")
+		UI:WaitShowDialogue(\n\"L'équipe \" .. GAME:GetTeamName()
 		GAME:RestartToTitle()
 	else
 		GAME:EnterGroundMap(ground, marker)
@@ -922,7 +930,7 @@ function GeneralFunctions.RewardItem(itemID, money, amount)
 	SOUND:PlayFanfare("Fanfare/Item")
 	
 	if money then 
-		UI:WaitShowDialogue("Team " .. GAME:GetTeamName() .. " received " .. "[color=#00FFFF]" .. itemID .. "[color]" .. STRINGS:Format("\\uE024") .. ".[pause=40]") 
+		UI:WaitShowDialogue(\n\"Le \" .. item:GetDisplayName() .. " a reçu " .. "[color=#00FFFF]" .. itemID .. "[color]" .. STRINGS:Format("\\uE024") .. ".[pause=40]") 
 		GAME:AddToPlayerMoney(itemID)
 	else	
 		local itemEntry = RogueEssence.Data.DataManager.Instance:GetItem(itemID)
@@ -938,11 +946,11 @@ function GeneralFunctions.RewardItem(itemID, money, amount)
 		
 		if first_letter == "A" or first_letter == 'E' or first_letter == 'I' or first_letter == 'O' or first_letter == 'U' then article = 'an' end
 
-		UI:WaitShowDialogue("Team " .. GAME:GetTeamName() .. " received " .. article .. " " .. item:GetDisplayName() ..".[pause=40]") 
+		UI:WaitShowDialogue(\n\"L'équipe \" .. GAME:GetTeamName() .. " a reçu " .. item:GetDisplayName() ..".[pause=40]") 
 		
 		--bag is full - equipped count is separate from bag and must be included in the calc
 		if GAME:GetPlayerBagCount() + GAME:GetPlayerEquippedCount() >= GAME:GetPlayerBagLimit() then
-			UI:WaitShowDialogue("The " .. item:GetDisplayName() .. " was sent to storage.")
+			UI:WaitShowDialogue(\nFélicitations !) .. " a été placé au stockage.")
 			GAME:GivePlayerStorageItem(item.ID, amount)
 		else
 			GAME:GivePlayerItem(item.ID, amount)
@@ -983,7 +991,7 @@ function GeneralFunctions.RewardPoints(amount, silent)
 	
 	if not silent then 
 		SOUND:PlayFanfare("Fanfare/Item")
-		UI:WaitShowDialogue("Team " .. GAME:GetTeamName() .. " earned\n[color=#00FFFF]" .. amount .. "[color] Adventurer Rank Points![pause=40]")
+		UI:WaitShowDialogue(\n\"L'équipe \" .. GAME:GetTeamName() .. " a gagné\n[color=#00FFFF]" .. amount .. "[color] Points de Grade d'Aventurier ![pause=40]")
 	end
 	
 	--check if a rank up is needed
@@ -1019,12 +1027,27 @@ function GeneralFunctions.RankUp(leftover_points)
 	UI:ResetSpeaker()
 	UI:SetCenter(true)
 	
-	UI:WaitShowDialogue("Congratulations!")
-	UI:WaitShowDialogue("Team " .. GAME:GetTeamName() .. " went up in rank from the\n[color=#FFA5FF]" .. current_rank:gsub("^%l", string.upper) .. " Rank[color] to the [color=#FFA5FF]" .. next_rank:gsub("^%l", string.upper) .. " Rank[color]!") 
+	UI:WaitShowDialogue(\n\"Le nombre d'objets que vous pouvez stocker dans votre Sac à Trésors est passé de [color=#00FFFF]\" .. tostring(_DATA:GetRank(current_rank)
+	UI:WaitShowDialogue(\n\"Pour votre montée en grade,[pause=10] votre équipe a reçu un/e \" .. item:GetDisplayName(",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1784880186,
+  "id": "20260724160300f076988cc5774c9b",
+  "model": "glm-4-plus",
+  "object": "chat.completion",
+  "request_id": "20260724160300f076988cc5774c9b",
+  "usage": {
+    "completion_tokens": 178,
+    "prompt_tokens": 360,
+    "total_tokens": 538
+  }
+}) .. " est montée en grade, passant du\n[color=#FFA5FF] Rang " .. current_rank:gsub("^%l", string.upper) .. "[color] au [color=#FFA5FF] Rang " .. next_rank:gsub("^%l", string.upper) .. "[color] !") 
 	
 	--notify of bag size increase
 	if  _DATA:GetRank(current_rank).BagSize < _DATA:GetRank(next_rank).BagSize then
-		UI:WaitShowDialogue("The number of items you can store in your Treasure Bag has increased from [color=#00FFFF]" .. tostring(_DATA:GetRank(current_rank).BagSize) .. "[color] to [color=#00FFFF]" .. tostring(_DATA:GetRank(next_rank).BagSize) .. "[color].")
+		UI:WaitShowDialogue("Le nombre d'objets que vous pouvez stocker dans votre Sac à Trésors est passé de [color=#00FFFF]" .. tostring(_DATA:GetRank(current_rank).BagSize) .. "[color] à [color=#00FFFF]" .. tostring(_DATA:GetRank(next_rank).BagSize) .. "[color].")
 	end
 
 	--depending on the specific rank up achieved, reward the player with different goodies.
@@ -1058,11 +1081,19 @@ function GeneralFunctions.RankUp(leftover_points)
 	
 	local item = RogueEssence.Dungeon.InvItem(reward_id, false, 1)
 	SOUND:PlayFanfare("Fanfare/Item")
-	UI:WaitShowDialogue("For advancing in rank,[pause=10] your team was awarded a " .. item:GetDisplayName() ..".[pause=40]") 
+	UI:WaitShowDialogue("Pour votre montée en grade,[pause=10] votre équipe a reçu un/e " .. item:GetDisplayName() ..".[pause=40]") 
 	
 	--bag is full - equipped count is separate from bag and most be included in the calc
 	if GAME:GetPlayerBagCount() + GAME:GetPlayerEquippedCount() >= GAME:GetPlayerBagLimit() then
-		UI:WaitShowDialogue("The " .. item:GetDisplayName() .. " was sent to storage.")
+		UI:WaitShowDialogue(🚀 Initializing Z-AI SDK...
+🚀 Sending chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "\" .. item:GetDisplayName()) .. " was sent to storage.")
 		GAME:GivePlayerStorageItem(item.ID, amount)
 	else
 		GAME:GivePlayerItem(item.ID, amount)
@@ -1132,7 +1163,7 @@ function GeneralFunctions.DuoTurnTowardsCharWithDialogue(chara, dialogue, heroDe
 	
 	local coro1 = TASK:BranchCoroutine(function() GAME:WaitFrames(heroDelay) GROUND:CharTurnToCharAnimated(hero, chara, 4) end)
 	local coro2 = TASK:BranchCoroutine(function() GROUND:CharTurnToCharAnimated(partner, chara, 4) end)
-	UI:WaitShowDialogue(dialogue)
+	UI:WaitShowDialogue(\ndialogue)
 	
 	TASK:JoinCoroutines({coro1, coro2})
 
@@ -1248,7 +1279,7 @@ function GeneralFunctions.StartConversation(target, dialogue, emotion, npcTurn, 
     if npcTurn then GROUND:CharTurnToChar(target, hero) end
     local coro1 = TASK:BranchCoroutine(function() GROUND:CharTurnToCharAnimated(partner, target, turnframes) end)
 
-    UI:WaitShowDialogue(dialogue)
+    UI:WaitShowDialogue(\ndialogue)
 
     TASK:JoinCoroutines({coro1})
 	UI:WaitDialog()
@@ -1295,7 +1326,22 @@ function GeneralFunctions.StartPartnerConversation(dialogue, emotion, heroTurn)
 		
     GROUND:CharTurnToCharAnimated(partner, hero, 4)
 
-    UI:WaitShowDialogue(dialogue)
+    UI:WaitShowDialogue(\ndialogue",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1784880186,
+  "id": "20260724160306efc0c9aaa3274c56",
+  "model": "glm-4-plus",
+  "object": "chat.completion",
+  "request_id": "20260724160306efc0c9aaa3274c56",
+  "usage": {
+    "completion_tokens": 19,
+    "prompt_tokens": 190,
+    "total_tokens": 209
+  }
+})
 	
 	--hero turns towards partner after 1st line of dialogue
 	if heroTurn then GROUND:CharTurnToCharAnimated(hero, partner, 4) end
@@ -1453,11 +1499,11 @@ function GeneralFunctions.AskMissionWarpOut()
 	while state > -1 do
 		if state == 0 then
 			if has_ongoing_mission then
-				UI:ChoiceMenuYesNo("You have more ongoing missions, but would you like to leave the dungeon now?", true)
+				UI:ChoiceMenuYesNo("Vous avez d'autres missions en cours, mais voulez-vous quitter le donjon maintenant ?", true)
 				UI:WaitForChoice()
 				local leave_dungeon = UI:ChoiceResult()
 				if leave_dungeon then
-					UI:ChoiceMenuYesNo("Do you really want to leave?", true)
+					UI:ChoiceMenuYesNo("Voulez-vous vraiment partir ?", true)
 					UI:WaitForChoice()
 					local leave_confirm = UI:ChoiceResult()
 					if leave_confirm then
@@ -1472,7 +1518,7 @@ function GeneralFunctions.AskMissionWarpOut()
 					SetMinimap()
 				end
 			else
-				UI:ChoiceMenuYesNo("You have no more ongoing missions beyond this point.\nWould you like to leave the dungeon now?", false)
+				UI:ChoiceMenuYesNo("Vous n'avez plus de missions en cours à partir d'ici.\nVoulez-vous quitter le donjon maintenant ?", false)
 				UI:WaitForChoice()
 				local leave_dungeon = UI:ChoiceResult()
 				if leave_dungeon then

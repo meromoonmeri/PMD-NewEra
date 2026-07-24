@@ -67,7 +67,7 @@ function illuminant_riverbed.ExitSegment(zone, result, rescue, segmentID, mapID)
 		if not SV.Chapter2.FinishedRiver and result ~= RogueEssence.Data.GameProgress.ResultType.Escaped then --team died before making it to the end for the first time. 
 			UI:SetSpeaker(GAME:GetPlayerPartyMember(1))--set partner as speaker 
 			UI:SetSpeakerEmotion("Pain")
-			UI:WaitShowDialogue("Urgh...[pause=0] That didn't go well...")
+			UI:WaitShowDialogue("Argh...[pause=0] Ça s'est mal passé...")
 			GAME:WaitFrames(20)
 		end
 				

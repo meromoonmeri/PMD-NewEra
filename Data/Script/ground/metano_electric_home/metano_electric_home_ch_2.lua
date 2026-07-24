@@ -6,38 +6,38 @@ require 'CharacterEssentials'
 metano_electric_home_ch_2 = {}
 
 function metano_electric_home_ch_2.SetupGround()
-	
-	if not SV.Chapter2.FinishedFirstDay then
-		local manectric  = 
-			CharacterEssentials.MakeCharactersFromList({
-				{'Manectric', 184, 162, Direction.Right}
+        
+        if not SV.Chapter2.FinishedFirstDay then
+                local manectric  = 
+                        CharacterEssentials.MakeCharactersFromList({
+                                {'Manectric', 184, 162, Direction.Right}
 
-			})
-	else 
-		local electrike = 
-			CharacterEssentials.MakeCharactersFromList({
-				{'Electrike', 144, 168, Direction.Right}
-			})
-			
-		AI:SetCharacterAI(electrike, "ai.ground_default", RogueElements.Loc(112, 136), RogueElements.Loc(64, 64), 1, 16, 32, 40, 180)
+                        })
+        else 
+                local electrike = 
+                        CharacterEssentials.MakeCharactersFromList({
+                                {'Electrike', 144, 168, Direction.Right}
+                        })
+                        
+                AI:SetCharacterAI(electrike, "ai.ground_default", RogueElements.Loc(112, 136), RogueElements.Loc(64, 64), 1, 16, 32, 40, 180)
 
-	end
-	
+        end
+        
 
-	
-	GAME:FadeIn(20)
+        
+        GAME:FadeIn(20)
 end
 
 function metano_electric_home_ch_2.Manectric_Action(chara, activator)
-	GeneralFunctions.StartConversation(chara, "My sweet boy's out playing with his friends right now.")
-	UI:SetSpeakerEmotion("Happy")
-	UI:WaitShowDialogue("Their little group makes a wonderful bunch,[pause=10] don't you think?[pause=0] I'm glad he's able to get along with them.")
-	GeneralFunctions.EndConversation(chara)
+        GeneralFunctions.StartConversation(chara, "My sweet boy's out playing with his friends right now.")
+        UI:SetSpeakerEmotion("Happy")
+        UI:WaitShowDialogue("Leur petit groupe est vraiment adorable,[pause=10] tu ne trouves pas ?[pause=0] Ça me fait plaisir qu'il s'entende si bien avec eux.")
+        GeneralFunctions.EndConversation(chara)
 end 
 
 
 function metano_electric_home_ch_2.Electrike_Action(chara, activator)
-	GeneralFunctions.StartConversation(chara, "Don't let anyone know I'm here![pause=0] I'm hiding inside today.")
-	UI:WaitShowDialogue("If I go outside,[pause=10] I might get stuck doing nothing with the wonder twins again.")
-	GeneralFunctions.EndConversation(chara)
+        GeneralFunctions.StartConversation(chara, "Don't let anyone know I'm here![pause=0] I'm hiding inside today.")
+        UI:WaitShowDialogue("Si je sors,[pause=10] je risque encore de me retrouver à ne rien faire avec les jumeaux ennuyeux.")
+        GeneralFunctions.EndConversation(chara)
 end 

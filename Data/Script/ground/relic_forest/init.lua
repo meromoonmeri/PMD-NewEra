@@ -128,12 +128,13 @@ function relic_forest.GenericEnding()
 	--temporary flags are set by the zone script rather than here.
 	GAME:WaitFrames(20)
 	UI:SetCenter(true)
-	UI:WaitShowDialogue("There doesn't appear to be anything of interest here.")
-	UI:WaitShowDialogue("It's impossible to go any further.[pause=0]\nIt's time to go back.")
+	UI:WaitShowDialogue("On dirait qu'il n'y a rien d'intéressant ici.")
+	UI:WaitShowDialogue("On ne peut pas aller plus loin.[pause=0]\\\\
+Il est temps de rebrousser chemin.")
 	GAME:WaitFrames(40)
 	
 	--touch the rock, for luck 
-	UI:WaitShowDialogue("...But first...")
+	UI:WaitShowDialogue("...Mais d'abord...")
 	GAME:WaitFrames(20)
 	coro1 = TASK:BranchCoroutine(function() GeneralFunctions.EightWayMove(partner, 293, 210, false, 1) end)
 	coro2 = TASK:BranchCoroutine(function() if team2 ~= nil then GAME:WaitFrames(2) GROUND:CharAnimateTurnTo(team2, Direction.Up, 4) end end)
@@ -166,7 +167,7 @@ function relic_forest.GenericEnding()
 	coro2 = TASK:BranchCoroutine(function() GeneralFunctions.DoAnimation(partner, "Nod") end)
 	TASK:JoinCoroutines({coro1, coro2})
 	GAME:WaitFrames(20)
-	UI:WaitShowDialogue("...For luck.")
+	UI:WaitShowDialogue("...Pour la chance.")
 	GAME:WaitFrames(30)
 	UI:SetCenter(false)
 	SOUND:FadeOutBGM(60)
@@ -188,4 +189,3 @@ function relic_forest.Teammate1_Action(chara, activator)
 end
 
 return relic_forest
-

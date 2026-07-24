@@ -83,7 +83,7 @@ function apricorn_grove.ExitSegment(zone, result, rescue, segmentID, mapID)
 		if not SV.Chapter4.FinishedGrove and result ~= RogueEssence.Data.GameProgress.ResultType.Escaped then --team died before making it to the end for the first time. 
 			UI:SetSpeaker(GAME:GetPlayerPartyMember(1))--set partner as speaker 
 			UI:SetSpeakerEmotion("Pain")
-			UI:WaitShowDialogue("Urk![pause=0] That didn't go as planned...")
+			UI:WaitShowDialogue("Aïe ![pause=0] Ça ne s'est pas passé comme prévu...")
 			GAME:WaitFrames(20)
 		end
 				

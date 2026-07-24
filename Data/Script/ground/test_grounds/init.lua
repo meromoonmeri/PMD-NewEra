@@ -31,7 +31,7 @@ function test_grounds.Init(map)
   local partner = CH('Partner')
   AI:SetCharacterAI(partner, "ai.ground_partner", CH('PLAYER'), partner.Position)
   partner.CollisionDisabled = true
-	
+        
   --Set Poochy AI
   local poochy = CH("Poochy")
   --Set the area to wander in
@@ -75,11 +75,11 @@ function test_grounds.Enter(map)
   
   local caterQuest = SV.test_grounds.Missions["CaterQuest"]
   if caterQuest == nil or caterQuest.Complete == COMMON.MISSION_INCOMPLETE then
-	GROUND:Hide("Caterpie")
+        GROUND:Hide("Caterpie")
   end
   local volmiseQuest = SV.test_grounds.Missions["VolmiseQuest"]
   if volmiseQuest == nil or volmiseQuest.Complete == COMMON.MISSION_INCOMPLETE then
-	GROUND:Hide("Illumise")
+        GROUND:Hide("Illumise")
   end
   
   GAME:FadeIn(60)
@@ -87,9 +87,9 @@ function test_grounds.Enter(map)
   
   if not SV.test_grounds.DemoComplete then
     GAME:SetTeamName(STRINGS:FormatKey("TEAM_NAME", "Guildmaster"))
-    UI:WaitShowDialogue(STRINGS:Format("Congratulations on completing the toughest dungeon in the demo![pause=0] Enjoy the debug room!"))
-	GAME:UnlockDungeon('debug_zone')
-	GAME:UnlockDungeon('tropical_path')
+    UI:WaitShowDialogue(STRINGS:Format("Félicitations pour avoir complété le donjon le plus dur de la démo ![pause=0] Profitez de la salle de debug !"))
+        GAME:UnlockDungeon('debug_zone')
+        GAME:UnlockDungeon('tropical_path')
   end
   SV.test_grounds.DemoComplete = true
 end
@@ -104,7 +104,7 @@ function test_grounds.Test_Action()
   PrintInfo('Test_Action')
 
   UI:SetSpeaker(CH('PLAYER'))
-  UI:WaitShowDialogue("So cool!")
+  UI:WaitShowDialogue("Trop cool !")
   GROUND:Unhide("Illumise")
   GROUND:Unhide("Caterpie")
   local groundObject = RogueEssence.Ground.GroundObject(RogueEssence.Content.ObjAnimData("Sign", 1), RogueElements.Rect(244, 180, 24, 24), RogueElements.Loc(8, 0), false, "Sign2")
@@ -120,10 +120,10 @@ function test_grounds.Sign1_Action(obj, activator)
   UI:ResetSpeaker()
   UI:SetCenter(true)
   UI:WaitShowDialogue(MapStrings['Sign1_Action_Line0'])
-  UI:WaitShowVoiceOver("This room features many[pause=0]\nmechanics useful for scripting.[br]Some of which\n\nmay never be used\nin the final game.[scroll]To enable developer mode,[scroll]run dev.bat in the game folder.", -1)
+  UI:WaitShowVoiceOver("Cette pièce présente plusieurs[pause=0]\nmécaniques utiles pour le scripting.[br]Dont certains\n\nne seront probablement jamais utilisés\ndans le jeu final.[scroll]Pour activer le mode développeur,[scroll]lancez dev.bat dans le dossier du jeu.", -1)
   GAME:WaitFrames(30)
   UI:SetAutoFinish(true)
-  UI:WaitShowVoiceOver("Fork us at[pause=0]\nhttps://github.com/audinowho/PMDODump![br]Now...\nLet's move you around![scroll]Ready in\n3 2 1", -1)
+  UI:WaitShowVoiceOver("Forkkez-nous à[pause=0]\nhttps://github.com/audinowho/PMDODump![br]Maintenant...\nFaisons bouger ça ![scroll]Prêt dans\n3 2 1", -1)
   
   TASK:WaitStartEntityTask(activator, function()
     SOUND:PlayBattleSE("EVT_Emote_Confused")
@@ -138,7 +138,7 @@ function test_grounds.Sign1_Action(obj, activator)
 
   UI:SetAutoFinish(false)
   TASK:WaitEntityTask(activator)
-  UI:WaitShowDialogue("Ye,[pause=0] you just moved around by yourself.")
+  UI:WaitShowDialogue("Ouais,[pause=0] tu viens de te déplacer tout seul.")
   
   SOUND:PlayBattleSE("DUN_Explosion")
   local emitter = RogueEssence.Content.SingleEmitter(RogueEssence.Content.AnimData("Flamethrower", 3))
@@ -146,7 +146,7 @@ function test_grounds.Sign1_Action(obj, activator)
   GROUND:PlayVFX(emitter, activator.MapLoc.X, activator.MapLoc.Y)
   
   GAME:WaitFrames(60)
-  UI:WaitShowDialogue("BOOM.")
+  UI:WaitShowDialogue("BOUM.")
   
   SOUND:PlayBattleSE("DUN_Explosion")
   emitter = RogueEssence.Content.FiniteAreaEmitter(RogueEssence.Content.AnimData("Explosion", 3))
@@ -156,12 +156,12 @@ function test_grounds.Sign1_Action(obj, activator)
   GROUND:PlayVFX(emitter, activator.MapLoc.X, activator.MapLoc.Y)
   
   GAME:WaitFrames(60)
-  UI:WaitShowDialogue("BOOM BOOM BOOM.")
+  UI:WaitShowDialogue("BOUM BOUM BOUM.")
 end
 
 
 function test_grounds.Concurrent_Sequence(turnTime)
-	local chara = CH('PLAYER')
+        local chara = CH('PLAYER')
   
   GROUND:CharSetAnim(chara, "None", true)
   GROUND:CharAnimateTurnTo(chara, Direction.Left, turnTime)
@@ -209,7 +209,7 @@ end
 
 function test_grounds.Concurrent_Title()
 
-  UI:WaitShowTitle("Like\nComment\nSubscribe", 60)
+  UI:WaitShowTitle("Abonne\nCommente\nPartage", 60)
   GAME:WaitFrames(120)
   UI:WaitHideTitle(60)
 end
@@ -228,10 +228,10 @@ function test_grounds.Sign2_Action(obj, activator)
   DEBUG.EnableDbgCoro() --Enable debugging this coroutine
   local chara = CH('PLAYER')
   GROUND:Unhide('Activation')
-  UI:WaitShowDialogue("The Debug Dungeon is accessible from here.")
-  UI:WaitShowDialogue("We do not take responsibility for broken things you encounter there.")
-  UI:WaitShowDialogue("If you get stuck inside, try deleting SAVE/QUICKSAVE.rsqs")
-  UI:WaitShowDialogue("Maybe back up your main save too. (SAVE/SAVE.rssv)")
+  UI:WaitShowDialogue("Le Donjon de Debug est accessible d'ici.")
+  UI:WaitShowDialogue("Nous ne sommes pas responsables des bugs que vous y rencontrerez.")
+  UI:WaitShowDialogue("Si vous êtes coincé à l'intérieur, essayez de supprimer SAVE/QUICKSAVE.rsqs")
+  UI:WaitShowDialogue("Peut-être faire une sauvegarde de votre fichier principal aussi. (SAVE/SAVE.rssv)")
 end
 
 function test_grounds.Entrance_Touch(obj, activator)
@@ -251,15 +251,15 @@ function test_grounds.Assembly_Action(obj, activator)
   UI:AssemblyMenu()
   UI:WaitForChoice()
   result = UI:ChoiceResult()
-  UI:WaitShowDialogue("Unlike the assembly objects in other maps, this one doesn't reload the map on team change.")
+  UI:WaitShowDialogue("Contrairement aux objets d'assemblée des autres cartes, celui-ci ne recharge pas la carte lors d'un changement d'équipe.")
 end
 
 function test_grounds.SouthExit_Touch(obj, activator)
   DEBUG.EnableDbgCoro() --Enable debugging this coroutine
   
   local open_dests = {
-    { Name="Replay Test Zone", Dest=RogueEssence.Dungeon.ZoneLoc('debug_zone', 4, 0, 0) },
-    { Name="Base Camp", Dest=RogueEssence.Dungeon.ZoneLoc('guildmaster_island', -1, 1, 0) }
+    { Name="Zone de Test Replay", Dest=RogueEssence.Dungeon.ZoneLoc('debug_zone', 4, 0, 0) },
+    { Name="Camp de Base", Dest=RogueEssence.Dungeon.ZoneLoc('guildmaster_island', -1, 1, 0) }
   }
   local open_dungeons = { 0 }
   local ground_entrances = { 1 }
@@ -273,11 +273,11 @@ function test_grounds.SouthExit_Touch(obj, activator)
   if dest:IsValid() then
     SOUND:PlayBGM("", true)
     GAME:FadeOut(false, 20)
-	if dest.StructID.Segment > -1 then
-	  GAME:EnterDungeon(dest.ID, dest.StructID.Segment, dest.StructID.ID, dest.EntryPoint, RogueEssence.Data.GameProgress.DungeonStakes.Risk, true, false)
-	else
-	  GAME:EnterZone(dest.ID, dest.StructID.Segment, dest.StructID.ID, dest.EntryPoint)
-	end
+        if dest.StructID.Segment > -1 then
+          GAME:EnterDungeon(dest.ID, dest.StructID.Segment, dest.StructID.ID, dest.EntryPoint, RogueEssence.Data.GameProgress.DungeonStakes.Risk, true, false)
+        else
+          GAME:EnterZone(dest.ID, dest.StructID.Segment, dest.StructID.ID, dest.EntryPoint)
+        end
   end
 end
 --------------------------------------------------
@@ -293,7 +293,7 @@ function test_grounds.Mew_Action(chara, activator)
   GROUND:CharSetEmote(mew, "", 0)
 
   UI:SetSpeaker(mew)
-  UI:WaitShowTimedDialogue("Walk with me!", 120)
+  UI:WaitShowTimedDialogue("Marche avec moi !", 120)
   GROUND:CharSetEmote(mew, "happy", 0)
 
   local coro1 = TASK:BranchCoroutine(function() test_grounds.Walk_Sequence(mew) end)
@@ -327,7 +327,7 @@ function test_grounds.Caterpie_Action(chara, activator)
   GROUND:CharTurnToCharAnimated(chara, CH('PLAYER'), 4)
   
   UI:SetSpeaker(chara)
-  UI:WaitShowDialogue("So cool!")
+  UI:WaitShowDialogue("Trop cool !")
   
 end
 
@@ -342,31 +342,31 @@ function test_grounds.Magnezone_Action(chara, activator)
   local quest = SV.test_grounds.Missions["OutlawQuest"]
   if quest == nil then
     -- no outlaw quest? ask to start one
-    UI:ChoiceMenuYesNo("No Outlaw mission detected. Do you want to start one?")
+    UI:ChoiceMenuYesNo("Aucune mission de fugitif détectée. Voulez-vous en commencer une ?")
     UI:WaitForChoice()
     local chres = UI:ChoiceResult() 
     if chres then
-	  -- Type 0 = Rescue
-	  SV.test_grounds.Missions["OutlawQuest"] = { Complete = COMMON.MISSION_INCOMPLETE, Type = COMMON.MISSION_TYPE_OUTLAW, DestZone = "debug_zone", DestSegment = 4, DestFloor = 9, TargetSpecies = "riolu" }
-      UI:WaitShowDialogue("You can find the perpetrator at Replay Test Zone 10F.  Good luck!")
+          -- Type 0 = Rescue
+          SV.test_grounds.Missions["OutlawQuest"] = { Complete = COMMON.MISSION_INCOMPLETE, Type = COMMON.MISSION_TYPE_OUTLAW, DestZone = "debug_zone", DestSegment = 4, DestFloor = 9, TargetSpecies = "riolu" }
+      UI:WaitShowDialogue("Vous trouverez le coupable à la Zone de Test Replay 10F.  Bonne chance !")
     end
   else
     if quest.Complete == 2 then
-	  -- there is an outlaw quest, and it has been completed- thank you note
-	  UI:WaitShowDialogue("Outlaw mission state: Rewarded.  Thank you for apprehending Riolu!")
-	elseif quest.Complete == 1 then
-	  UI:WaitShowDialogue("Outlaw mission state: Complete.  Give a reward and mark mission as rewarded.")
-	  quest.Complete = 2
-	else
-	  -- there is an outlaw quest, but it hasn't been completed?  ask to abandon
-      UI:ChoiceMenuYesNo("Outlaw mission state: Incomplete.  Do you want to abandon the mission?")
+          -- there is an outlaw quest, and it has been completed- thank you note
+          UI:WaitShowDialogue("État de la mission de fugitif : Récompensé.  Merci d'avoir arrêté Riolu !")
+        elseif quest.Complete == 1 then
+          UI:WaitShowDialogue("État de la mission de fugitif : Complète.  Donnez une récompense et marquez la mission comme récompensée.")
+          quest.Complete = 2
+        else
+          -- there is an outlaw quest, but it hasn't been completed?  ask to abandon
+      UI:ChoiceMenuYesNo("État de la mission de fugitif : Incomplète.  Voulez-vous abandonner la mission ?")
       UI:WaitForChoice()
       local chres = UI:ChoiceResult() 
       if chres then
-	    SV.test_grounds.Missions["OutlawQuest"] = nil
-        UI:WaitShowDialogue("Outlaw mission removed.")
+            SV.test_grounds.Missions["OutlawQuest"] = nil
+        UI:WaitShowDialogue("Mission de fugitif supprimée.")
       end
-	end
+        end
   end
 end
 
@@ -381,31 +381,31 @@ function test_grounds.Butterfree_Action(chara, activator)
   local quest = SV.test_grounds.Missions["CaterQuest"]
   if quest == nil then
     -- no caterpie quest? ask to start one
-    UI:ChoiceMenuYesNo("No Caterpie mission detected. Do you want to start one?")
+    UI:ChoiceMenuYesNo("Aucune mission de Chenipan détectée. Voulez-vous en commencer une ?")
     UI:WaitForChoice()
     local chres = UI:ChoiceResult() 
     if chres then
-	  -- Type 0 = Rescue
-	  SV.test_grounds.Missions["CaterQuest"] = { Complete = COMMON.MISSION_INCOMPLETE, Type = COMMON.MISSION_TYPE_RESCUE, DestZone = "debug_zone", DestSegment = 4, DestFloor = 4, TargetSpecies = "caterpie" }
-      UI:WaitShowDialogue("You can find Caterpie at Replay Test Zone 5F.  Good luck!")
+          -- Type 0 = Rescue
+          SV.test_grounds.Missions["CaterQuest"] = { Complete = COMMON.MISSION_INCOMPLETE, Type = COMMON.MISSION_TYPE_RESCUE, DestZone = "debug_zone", DestSegment = 4, DestFloor = 4, TargetSpecies = "caterpie" }
+      UI:WaitShowDialogue("Vous trouverez Chenipan à la Zone de Test Replay 5F.  Bonne chance !")
     end
   else
     if quest.Complete == 2 then
-	  -- there is a caterpie quest, and it has been completed- thank you note
-	  UI:WaitShowDialogue("Caterpie mission state: Rewarded.  Thank you for rescuing Caterpie!")
-	elseif quest.Complete == 1 then
-	  UI:WaitShowDialogue("Caterpie mission state: Complete.  Give a reward and mark mission as rewarded.")
-	  quest.Complete = 2
-	else
-	  -- there is a caterpie quest, but it hasn't been completed?  ask to abandon
-      UI:ChoiceMenuYesNo("Caterpie mission state: Incomplete.  Do you want to abandon the mission?")
+          -- there is a caterpie quest, and it has been completed- thank you note
+          UI:WaitShowDialogue("État de la mission de Chenipan : Récompensée.  Merci d'avoir sauvé Chenipan !")
+        elseif quest.Complete == 1 then
+          UI:WaitShowDialogue("État de la mission de Chenipan : Complète.  Donnez une récompense et marquez la mission comme récompensée.")
+          quest.Complete = 2
+        else
+          -- there is a caterpie quest, but it hasn't been completed?  ask to abandon
+      UI:ChoiceMenuYesNo("État de la mission de Chenipan : Incomplète.  Voulez-vous abandonner la mission ?")
       UI:WaitForChoice()
       local chres = UI:ChoiceResult() 
       if chres then
-	    SV.test_grounds.Missions["CaterQuest"] = nil
-        UI:WaitShowDialogue("Caterpie mission removed.")
+            SV.test_grounds.Missions["CaterQuest"] = nil
+        UI:WaitShowDialogue("Mission de Chenipan supprimée.")
       end
-	end
+        end
   end
 end
 
@@ -417,7 +417,7 @@ function test_grounds.Illumise_Action(chara, activator)
   GROUND:CharTurnToCharAnimated(chara, CH('PLAYER'), 4)
   
   UI:SetSpeaker(chara)
-  UI:WaitShowDialogue("Thank you for rescuing me!")
+  UI:WaitShowDialogue("Merci de m'avoir sauvé !")
   
 end
 
@@ -431,31 +431,31 @@ function test_grounds.Volbeat_Action(chara, activator)
   local quest = SV.test_grounds.Missions["VolmiseQuest"]
   if quest == nil then
     -- no caterpie quest? ask to start one
-    UI:ChoiceMenuYesNo("No Volmise mission detected. Do you want to start one?")
+    UI:ChoiceMenuYesNo("Aucune mission Volmise détectée. Voulez-vous en commencer une ?")
     UI:WaitForChoice()
     local chres = UI:ChoiceResult() 
     if chres then
-	  -- Type 1 = Escort
-	  SV.test_grounds.Missions["VolmiseQuest"] = { Complete = COMMON.MISSION_INCOMPLETE, Type = COMMON.MISSION_TYPE_ESCORT, DestZone = "debug_zone", DestSegment = 4, DestFloor = 3, TargetSpecies = "illumise", EscortSpecies = "volbeat" }
-      UI:WaitShowDialogue("You can find Illumise at Replay Test Zone 4F.  I'll join you when you enter!")
+          -- Type 1 = Escort
+          SV.test_grounds.Missions["VolmiseQuest"] = { Complete = COMMON.MISSION_INCOMPLETE, Type = COMMON.MISSION_TYPE_ESCORT, DestZone = "debug_zone", DestSegment = 4, DestFloor = 3, TargetSpecies = "illumise", EscortSpecies = "volbeat" }
+      UI:WaitShowDialogue("Vous trouverez Illumise à la Zone de Test Replay 4F.  Je vous rejoindrai quand vous entrerez !")
     end
   else
     if quest.Complete == 2 then
-	  -- there is a caterpie quest, and it has been completed- thank you note
-	  UI:WaitShowDialogue("Volmise mission state: Rewarded.  Thank you for rescuing Illumise!")
-	elseif quest.Complete == 1 then
-	  UI:WaitShowDialogue("Volmise mission state: Complete.  Give a reward and mark mission as rewarded.")
-	  quest.Complete = 2
-	else
-	  -- there is a caterpie quest, but it hasn't been completed?  ask to abandon
-      UI:ChoiceMenuYesNo("Volmise mission state: Incomplete.  Do you want to abandon the mission?")
+          -- there is a caterpie quest, and it has been completed- thank you note
+          UI:WaitShowDialogue("État de la mission Volmise : Récompensée.  Merci d'avoir sauvé Illumise !")
+        elseif quest.Complete == 1 then
+          UI:WaitShowDialogue("État de la mission Volmise : Complète.  Donnez une récompense et marquez la mission comme récompensée.")
+          quest.Complete = 2
+        else
+          -- there is a caterpie quest, but it hasn't been completed?  ask to abandon
+      UI:ChoiceMenuYesNo("État de la mission Volmise : Incomplète.  Voulez-vous abandonner la mission ?")
       UI:WaitForChoice()
       local chres = UI:ChoiceResult() 
       if chres then
-	    SV.test_grounds.Missions["VolmiseQuest"] = nil
-        UI:WaitShowDialogue("Volmise mission removed.")
+            SV.test_grounds.Missions["VolmiseQuest"] = nil
+        UI:WaitShowDialogue("Mission Volmise supprimée.")
       end
-	end
+        end
   end
 end
 
@@ -548,8 +548,8 @@ function test_grounds.Merchant_Action(chara, activator)
   UI:SetSpeaker(chara)
   
   
-  UI:WaitShowDialogue("Your sprite will always be Pikachu and Eevee, only on this map.")
-  UI:WaitShowDialogue("Handy for mods that want to imitate Explorers-style hub!")
+  UI:WaitShowDialogue("Votre sprite sera toujours Pikachu et Évoli, uniquement sur cette carte.")
+  UI:WaitShowDialogue("Pratique pour les mods qui veulent imiter le style Explorers !")
   UI:WaitDialog()
   GROUND:CharAnimateTurnTo(chara, olddir, 4)
 end
@@ -572,7 +572,7 @@ function test_grounds.Merchant2_Action(chara, activator)
   GROUND:CharTurnToCharAnimated(chara, activator, 4)
   UI:SetSpeaker(chara)
   
-  UI:TextDialogue(STRINGS:Format("HELLO!"))
+  UI:TextDialogue(STRINGS:Format("BONJOUR !"))
   UI:WaitDialog()
   GROUND:CharAnimateTurnTo(chara, olddir, 4)
 end
@@ -584,14 +584,14 @@ function test_grounds.Teammate1_Action(chara, activator)
   local tbl = LTBL(chara)
   
   if tbl.TalkAmount == nil then
-    UI:WaitShowDialogue("I have script vars specific to me.")
-    UI:WaitShowDialogue("Switch with me by pressing 2 and 1.")
-    UI:WaitShowDialogue("We will remember how many times we've been talked to.")
-	tbl.TalkAmount = 1
+    UI:WaitShowDialogue("J'ai des variables de script spécifiques à moi.")
+    UI:WaitShowDialogue("Changez avec moi en appuyant sur 2 et 1.")
+    UI:WaitShowDialogue("On se souviendra du nombre de fois qu'on nous a parlé.")
+        tbl.TalkAmount = 1
   else
-	tbl.TalkAmount = tbl.TalkAmount + 1
+        tbl.TalkAmount = tbl.TalkAmount + 1
   end
-  UI:WaitShowDialogue("You've talked to me "..tostring(tbl.TalkAmount).." times.")
+  UI:WaitShowDialogue("Vous m'avez parlé "..tostring(tbl.TalkAmount).." fois.")
 end
 
 function test_grounds.Teammate2_Action(chara, activator)

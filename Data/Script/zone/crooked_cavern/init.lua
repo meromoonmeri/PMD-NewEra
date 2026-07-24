@@ -74,8 +74,8 @@ function crooked_cavern.ExitSegment(zone, result, rescue, segmentID, mapID)
 			if not SV.Chapter3.DefeatedBoss and result ~= RogueEssence.Data.GameProgress.ResultType.Escaped then --team died before making it to the end for the first time. 
 				UI:SetSpeaker(GAME:GetPlayerPartyMember(1))--set partner as speaker 
 				UI:SetSpeakerEmotion("Pain")
-				UI:WaitShowDialogue("Urf...[pause=0] This is harder than I expected...")
-				UI:WaitShowDialogue("We can't continue on like this...[pause=0] Let's call it a day.")
+				UI:WaitShowDialogue("Argh...[pause=0] C'est plus dur que je pensais...")
+				UI:WaitShowDialogue("On ne peut pas continuer comme ça...[pause=0] Arrêtons pour aujourd'hui.")
 				SV.Chapter3.FailedCavern = true--mark that they died before the end so Team Style can taunt them for this.
 				GAME:WaitFrames(20)
 			end

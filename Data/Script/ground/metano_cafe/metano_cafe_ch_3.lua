@@ -6,159 +6,159 @@ require 'CharacterEssentials'
 metano_cafe_ch_3 = {}
 
 function metano_cafe_ch_3.SetupGround()
-	if not SV.Chapter3.DefeatedBoss then
-		local breloom, girafarig, gulpin, lickitung = 
-			CharacterEssentials.MakeCharactersFromList({
-				{'Breloom', 'Cafe_Table_9'},
-				{'Girafarig', 'Cafe_Table_10'},
-				{'Gulpin', 'Cafe_Table_2'},
-				{'Lickitung', 'Cafe_Table_1'}
-			})
-	else
-		local cleffa, aggron, gulpin, lickitung = 
-			CharacterEssentials.MakeCharactersFromList({
-				{'Cleffa', 'Cafe_Table_5'},
-				{'Aggron', 'Cafe_Table_6'},
-				{'Gulpin', 'Cafe_Table_2'},
-				{'Lickitung', 'Cafe_Table_1'}
-			})
-	end
-		
-	GAME:FadeIn(20)
+        if not SV.Chapter3.DefeatedBoss then
+                local breloom, girafarig, gulpin, lickitung = 
+                        CharacterEssentials.MakeCharactersFromList({
+                                {'Breloom', 'Cafe_Table_9'},
+                                {'Girafarig', 'Cafe_Table_10'},
+                                {'Gulpin', 'Cafe_Table_2'},
+                                {'Lickitung', 'Cafe_Table_1'}
+                        })
+        else
+                local cleffa, aggron, gulpin, lickitung = 
+                        CharacterEssentials.MakeCharactersFromList({
+                                {'Cleffa', 'Cafe_Table_5'},
+                                {'Aggron', 'Cafe_Table_6'},
+                                {'Gulpin', 'Cafe_Table_2'},
+                                {'Lickitung', 'Cafe_Table_1'}
+                        })
+        end
+                
+        GAME:FadeIn(20)
 end
 
 function metano_cafe_ch_3.Initial_Girafarig_Breloom_Conversation(chara, activator)
-	local hero = CH('PLAYER')
-	local partner = CH('Teammate1')
-	local breloom = CH('Breloom')
-	local girafarig = CH('Girafarig')
-	
-	GROUND:CharSetAnim(girafarig, 'None', true)
-	GROUND:CharSetAnim(breloom, 'None', true)
-	
-	GROUND:CharTurnToChar(breloom, hero)
-	GROUND:CharTurnToChar(girafarig, hero)
-	
-	GROUND:CharSetEmote(breloom, "happy", 0)
-	GeneralFunctions.StartConversation(breloom, "Hey you two,[pause=10] figures I'd catch you two slackers at the café now that it's open again,[pause=10] heheh!", "Happy")
-	GROUND:CharSetEmote(breloom, "", 0)
-	UI:WaitShowDialogue("Just kidding![pause=0] What brings you two here?")
-	
-	GAME:WaitFrames(20)
-	UI:SetSpeaker(partner)
-	UI:WaitShowDialogue("Me and " .. hero:GetDisplayName() .. " wanted to check out the café now that it's open for business again.")
-	UI:WaitShowDialogue("What are you doing here?")
-	
-	
-	GAME:WaitFrames(20)
-	GROUND:CharTurnToChar(partner, girafarig)
-	GROUND:CharTurnToChar(hero, girafarig)
-	UI:SetSpeaker(girafarig)
-	UI:WaitShowDialogue("The three of us wanted to relax before we set out on our expedition.")
-	
-	GAME:WaitFrames(20)
-	GeneralFunctions.EmoteAndPause(partner, "Question", true)
-	UI:SetSpeaker(partner)
-	UI:SetSpeakerEmotion("Worried")
-	UI:WaitShowDialogue("Expedition?")
-	
-	GAME:WaitFrames(20)
-	GROUND:CharTurnToChar(partner, breloom)
-	GROUND:CharTurnToChar(hero, breloom)	
-	UI:SetSpeaker(breloom)
-	UI:WaitShowDialogue("Yup.[pause=0] We've been planning to explore some ruins up in a far-off mountain range for some time now.")
-	UI:SetSpeakerEmotion("Inspired")
-	UI:WaitShowDialogue("Rumor has it that some amazing secret lies in the ruins there!")
-	UI:SetSpeakerEmotion("Normal")
-	UI:WaitShowDialogue("But so far,[pause=10] nobody's been able to find anything beyond some old broken structures that don't do anything.")
-	UI:WaitShowDialogue("Since " .. girafarig:GetDisplayName() .. " and I are more experienced adventurers than most,[pause=10] we figured we'd take a crack at it.")
-	UI:WaitShowDialogue("Originally,[pause=10] we weren't going to leave on our expedition for a couple more weeks...")
-	UI:WaitShowDialogue("...But the Guildmaster just requested us to leave on it as soon as we could.")
-	
-	GAME:WaitFrames(20)
-	UI:SetSpeaker(partner)
-	UI:SetSpeakerEmotion("Inspired")
-	GROUND:CharSetEmote(partner, "happy", 0)
-	UI:WaitShowDialogue("Wow![pause=0] That's so cool![pause=0] That's the kind of adventuring I want to do!")
-	UI:WaitShowDialogue("I can't wait until me and " .. hero:GetDisplayName() .. " can go on adventures like that!")
-	
-	GAME:WaitFrames(20)
-	GROUND:CharSetEmote(partner, "", 0)
-	UI:SetSpeaker(girafarig)
-	GROUND:CharTurnToChar(partner, girafarig)
-	GROUND:CharTurnToChar(hero, girafarig)
-	UI:SetSpeakerEmotion("Happy")
-	UI:WaitShowDialogue("You'll get there some day![pause=0] You've got us and the rest of the guild behind you rearing for you!")
-	
-	GAME:WaitFrames(20)
-	GROUND:CharTurnToChar(partner, breloom)
-	GROUND:CharTurnToChar(hero, breloom)
-	UI:SetSpeaker(breloom)
-	UI:SetSpeakerEmotion("Happy")
-	UI:WaitShowDialogue("Good luck with your guild work until then![pause=0] " .. girafarig:GetDisplayName() .. " and I are going to be relaxing here until we leave for our trip.")
-	
-	
-	GeneralFunctions.EndConversation(breloom)
-	GROUND:CharTurnToChar(breloom, girafarig)
-	GROUND:CharTurnToChar(girafarig, breloom)
-	GROUND:CharEndAnim(breloom)
-	GROUND:CharEndAnim(girafarig)
-	SV.Chapter3.BreloomGirafarigConvo = true
+        local hero = CH('PLAYER')
+        local partner = CH('Teammate1')
+        local breloom = CH('Breloom')
+        local girafarig = CH('Girafarig')
+        
+        GROUND:CharSetAnim(girafarig, 'None', true)
+        GROUND:CharSetAnim(breloom, 'None', true)
+        
+        GROUND:CharTurnToChar(breloom, hero)
+        GROUND:CharTurnToChar(girafarig, hero)
+        
+        GROUND:CharSetEmote(breloom, "happy", 0)
+        GeneralFunctions.StartConversation(breloom, "Hé les deux,[pause=10] je savais bien que je vous retrouverais fainéants au café maintenant qu'il a rouvert,[pause=10] héhé !", "Happy")
+        GROUND:CharSetEmote(breloom, "", 0)
+        UI:WaitShowDialogue("Je plaisante ![pause=0] Qu'est-ce qui vous amène ici ?")
+        
+        GAME:WaitFrames(20)
+        UI:SetSpeaker(partner)
+        UI:WaitShowDialogue("Moi et " .. hero:GetDisplayName() .. " on voulait jeter un œil au café maintenant qu'il a rouvert.")
+        UI:WaitShowDialogue("Et vous, qu'est-ce que vous faites ici ?")
+        
+        
+        GAME:WaitFrames(20)
+        GROUND:CharTurnToChar(partner, girafarig)
+        GROUND:CharTurnToChar(hero, girafarig)
+        UI:SetSpeaker(girafarig)
+        UI:WaitShowDialogue("On voulait se détendre tous les trois avant de partir en expédition.")
+        
+        GAME:WaitFrames(20)
+        GeneralFunctions.EmoteAndPause(partner, "Question", true)
+        UI:SetSpeaker(partner)
+        UI:SetSpeakerEmotion("Worried")
+        UI:WaitShowDialogue("Expédition ?")
+        
+        GAME:WaitFrames(20)
+        GROUND:CharTurnToChar(partner, breloom)
+        GROUND:CharTurnToChar(hero, breloom)    
+        UI:SetSpeaker(breloom)
+        UI:WaitShowDialogue("Ouaip.[pause=0] Ça fait un moment qu'on prévoit d'explorer des ruines dans une chaîne de montagnes lointaine.")
+        UI:SetSpeakerEmotion("Inspired")
+        UI:WaitShowDialogue("La rumeur dit qu'un secret incroyable se cache dans ces ruines !")
+        UI:SetSpeakerEmotion("Normal")
+        UI:WaitShowDialogue("Mais jusqu'ici,[pause=10] personne n'a rien trouvé à part de vieilles structures brisées qui ne font rien.")
+        UI:WaitShowDialogue("Comme " .. girafarig:GetDisplayName() .. " et moi sommes des aventuriers plus expérimentés que la plupart,[pause=10] on a décidé d'essayer.")
+        UI:WaitShowDialogue("Au départ,[pause=10] on ne devait pas partir en expédition avant quelques semaines...")
+        UI:WaitShowDialogue("...Mais le Maître de la Guilde nous a demandé de partir dès que possible.")
+        
+        GAME:WaitFrames(20)
+        UI:SetSpeaker(partner)
+        UI:SetSpeakerEmotion("Inspired")
+        GROUND:CharSetEmote(partner, "happy", 0)
+        UI:WaitShowDialogue("Ouah ![pause=0] C'est trop cool ![pause=0] C'est ça, le genre d'aventure que je veux faire !")
+        UI:WaitShowDialogue("J'ai hâte que moi et " .. hero:GetDisplayName() .. " on parte dans des aventures comme ça !")
+        
+        GAME:WaitFrames(20)
+        GROUND:CharSetEmote(partner, "", 0)
+        UI:SetSpeaker(girafarig)
+        GROUND:CharTurnToChar(partner, girafarig)
+        GROUND:CharTurnToChar(hero, girafarig)
+        UI:SetSpeakerEmotion("Happy")
+        UI:WaitShowDialogue("Vous y arriverez un jour ![pause=0] Vous avez toute la guilde derrière vous qui vous encourage !")
+        
+        GAME:WaitFrames(20)
+        GROUND:CharTurnToChar(partner, breloom)
+        GROUND:CharTurnToChar(hero, breloom)
+        UI:SetSpeaker(breloom)
+        UI:SetSpeakerEmotion("Happy")
+        UI:WaitShowDialogue("Bonne chance pour le travail de la guilde en attendant ![pause=0] " .. girafarig:GetDisplayName() .. " et moi, on va se détendre ici jusqu'à notre départ.")
+        
+        
+        GeneralFunctions.EndConversation(breloom)
+        GROUND:CharTurnToChar(breloom, girafarig)
+        GROUND:CharTurnToChar(girafarig, breloom)
+        GROUND:CharEndAnim(breloom)
+        GROUND:CharEndAnim(girafarig)
+        SV.Chapter3.BreloomGirafarigConvo = true
 end 
 
 
 function metano_cafe_ch_3.Girafarig_Action(chara, activator)
-	if SV.Chapter3.BreloomGirafarigConvo then 
-		GeneralFunctions.StartConversation(chara, "You'll get to our level some day![pause=0] You've got us and the rest of the guild behind you rearing for you!", "Happy")
-		GeneralFunctions.EndConversation(chara)
-	else 
-		metano_cafe_ch_3.Initial_Girafarig_Breloom_Conversation(chara, activator)
-	end
+        if SV.Chapter3.BreloomGirafarigConvo then 
+                GeneralFunctions.StartConversation(chara, "Vous arriverez à notre niveau un jour ![pause=0] Vous avez toute la guilde derrière vous qui vous encourage !", "Happy")
+                GeneralFunctions.EndConversation(chara)
+        else 
+                metano_cafe_ch_3.Initial_Girafarig_Breloom_Conversation(chara, activator)
+        end
 end 
 
 function metano_cafe_ch_3.Breloom_Action(chara, activator)
-	if SV.Chapter3.BreloomGirafarigConvo then 
-		GeneralFunctions.StartConversation(chara, "Good luck with your guild work![pause=0] " .. CharacterEssentials.GetCharacterName("Girafarig") .. " and I are going to be relaxing here until we leave for our trip.", "Happy")
-		GeneralFunctions.EndConversation(chara)
-	else 
-		metano_cafe_ch_3.Initial_Girafarig_Breloom_Conversation(chara, activator)
-	end
+        if SV.Chapter3.BreloomGirafarigConvo then 
+                GeneralFunctions.StartConversation(chara, "Bonne chance pour le travail de la guilde ![pause=0] " .. CharacterEssentials.GetCharacterName("Girafarig") .. " et moi, on va se détendre ici jusqu'à notre départ.", "Happy")
+                GeneralFunctions.EndConversation(chara)
+        else 
+                metano_cafe_ch_3.Initial_Girafarig_Breloom_Conversation(chara, activator)
+        end
 end 
 
 
 function metano_cafe_ch_3.Lickitung_Action(chara, activator)
-	if not SV.Chapter3.DefeatedBoss then
-		GeneralFunctions.StartConversation(chara, "With the café open again,[pause=10] me and " .. CharacterEssentials.GetCharacterName("Gulpin") .. " can get our daily drinks again.")
-		UI:WaitShowDialogue("I'm a big fan of the drinks here,[pause=10] but " .. CharacterEssentials.GetCharacterName("Gulpin") .. " is a total fanatic compared to me.")
-	else
-		local item = RogueEssence.Dungeon.InvItem('cafe_domi_blend')
-		GeneralFunctions.StartConversation(chara, item:GetDisplayName() .. " is " .. CharacterEssentials.GetCharacterName("Shuckle") .. "'s specialty.[pause=0] Despite the odd ingredients,[pause=10] it's very healthy for you.")
-		UI:WaitShowDialogue("The taste,[pause=10] on the other hand,[pause=10] leaves something to be desired...")
-	end
-	GeneralFunctions.EndConversation(chara)
+        if not SV.Chapter3.DefeatedBoss then
+                GeneralFunctions.StartConversation(chara, "Avec le café rouvert,[pause=10] moi et " .. CharacterEssentials.GetCharacterName("Gulpin") .. " on peut reprendre nos boissons quotidiennes.")
+                UI:WaitShowDialogue("Je suis un grand fan des boissons d'ici,[pause=10] mais " .. CharacterEssentials.GetCharacterName("Gulpin") .. " est un vrai passionné comparé à moi.")
+        else
+                local item = RogueEssence.Dungeon.InvItem('cafe_domi_blend')
+                GeneralFunctions.StartConversation(chara, item:GetDisplayName() .. " est la spécialité de " .. CharacterEssentials.GetCharacterName("Shuckle") .. ".[pause=0] Malgré les ingrédients bizarres,[pause=10] c'est très bon pour la santé.")
+                UI:WaitShowDialogue("Le goût,[pause=10] par contre,[pause=10] laisse à désirer...")
+        end
+        GeneralFunctions.EndConversation(chara)
 end 
 
 function metano_cafe_ch_3.Gulpin_Action(chara, activator)
-	if not SV.Chapter3.DefeatedBoss then
-		GeneralFunctions.StartConversation(chara, "Hooray![pause=0] Precious drink,[pause=10] you are mine again to savor...!", "Happy")
-	else
-		GeneralFunctions.StartConversation(chara, "Mmmm...[pause=0] " .. STRINGS:Format('\\uE0A7').. "[color=#FFCEFF]Apple Cider[color]...[pause=0] So delicious and filling...", "Inspired")
-	end
-	GeneralFunctions.EndConversation(chara)
+        if not SV.Chapter3.DefeatedBoss then
+                GeneralFunctions.StartConversation(chara, "Youpi ![pause=0] Boisson précieuse,[pause=10] tu es à nouveau mienne à savourer... !", "Happy")
+        else
+                GeneralFunctions.StartConversation(chara, "Mmmm...[pause=0] " .. STRINGS:Format('\\uE0A7').. "[color=#FFCEFF]Apple Cider[color]...[pause=0] So delicious and filling...", "Inspired")
+        end
+        GeneralFunctions.EndConversation(chara)
 end 
 
 
 
 function metano_cafe_ch_3.Cleffa_Action(chara, activator)
-	local item = RogueEssence.Dungeon.InvItem('cafe_cheri_bomb')
-	GeneralFunctions.StartConversation(chara, "You moron![pause=0] This is a café,[pause=10] " .. CharacterEssentials.GetCharacterName("Shuckle") .. " sells drinks![pause=0]\nOf course we're going to drink the " .. item:GetDisplayName() .. "!", "Determined", false)
-	UI:WaitShowDialogue("If it's volatile,[pause=10] it'll give us an attack boost![pause=0]\nGive me it so I can carry your dead weight!")
-	GeneralFunctions.EndConversation(chara)
+        local item = RogueEssence.Dungeon.InvItem('cafe_cheri_bomb')
+        GeneralFunctions.StartConversation(chara, "Espèce d'idiote ![pause=0] C'est un café,[pause=10] " .. CharacterEssentials.GetCharacterName("Shuckle") .. " vend des boissons ![pause=0]\nBien sûr qu'on va boire le " .. item:GetDisplayName() .. " !", "Determined", false)
+        UI:WaitShowDialogue("Si c'est instable,[pause=10] ça nous donnera un boost d'attaque ![pause=0]\nDonne-le-moi pour que je puisse porter ton poids mort !")
+        GeneralFunctions.EndConversation(chara)
 end
 
 function metano_cafe_ch_3.Aggron_Action(chara, activator)
-	local item = RogueEssence.Dungeon.InvItem('cafe_cheri_bomb')
-	GeneralFunctions.StartConversation(chara, "Hey boss...[pause=0] I got this " .. item:GetDisplayName() .. " from " .. CharacterEssentials.GetCharacterName("Shuckle") .. "...", "Normal", false)
-	UI:WaitShowDialogue("He said not to drink it,[pause=10] since it's volatile...[pause=0] Maybe we could throw it instead of drinking it?")
-	GeneralFunctions.EndConversation(chara)
+        local item = RogueEssence.Dungeon.InvItem('cafe_cheri_bomb')
+        GeneralFunctions.StartConversation(chara, "Hé chef...[pause=0] J'ai eu ce " .. item:GetDisplayName() .. " de la part de " .. CharacterEssentials.GetCharacterName("Shuckle") .. "...", "Normal", false)
+        UI:WaitShowDialogue("Il m'a dit de ne pas le boire,[pause=10] puisque c'est instable...[pause=0] On pourrait peut-être le lancer au lieu de le boire ?")
+        GeneralFunctions.EndConversation(chara)
 end

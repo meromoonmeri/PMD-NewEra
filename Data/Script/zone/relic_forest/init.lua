@@ -45,7 +45,7 @@ function relic_forest.ExitSegment(zone, result, rescue, segmentID, mapID)
 				
 				UI:SetSpeaker(GAME:GetPlayerPartyMember(0))--set partner as speaker 
 				UI:SetSpeakerEmotion("Pain")
-				UI:WaitShowDialogue("Urf...[pause=0] This is tough...")			
+				UI:WaitShowDialogue("Argh...[pause=0] C'est dur...")			
 	
 				GAME:WaitFrames(20)
 				

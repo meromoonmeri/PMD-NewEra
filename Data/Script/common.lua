@@ -845,7 +845,15 @@ function COMMON.DungeonInteract(chara, target, action_cancel, turn_cancel)
   
     UI:SetSpeaker(target)
   
-    UI:WaitShowDialogue(chosen_quote)
+    UI:WaitShowDialogue(🚀 Initializing Z-AI SDK...
+🚀 Sending chat request...
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Faites revenir un membre de votre équipe à la guilde pour faire de la place à votre client, \" .. _DATA:GetMonster(mission.Client)
   
     target.CharDir = oldDir
   else
@@ -855,7 +863,22 @@ function COMMON.DungeonInteract(chara, target, action_cancel, turn_cancel)
 	local chosen_quote = RogueEssence.StringKey("TALK_CANT"):ToLocal()
     chosen_quote = string.gsub(chosen_quote, "%[myname%]", target:GetDisplayName(true))
 	
-    UI:WaitShowDialogue(chosen_quote)
+    UI:WaitShowDialogue(\n[color=#00FF00].. new_mob.Name ..[color] a été ajouté à l'équipe en tant qu'invité.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1784880449,
+  "id": "202607241607246dd8644f998d42c1",
+  "model": "glm-4-plus",
+  "object": "chat.completion",
+  "request_id": "202607241607246dd8644f998d42c1",
+  "usage": {
+    "completion_tokens": 64,
+    "prompt_tokens": 248,
+    "total_tokens": 312
+  }
+})
   
   end
   
@@ -1130,13 +1153,13 @@ function COMMON.EnterDungeonMissionCheck(zoneId, segmentID)
           local state = 0
           while state > -1 do
             UI:ResetSpeaker()
-            UI:WaitShowDialogue("Have one of your team members return to the guild to make room for your client, " .. _DATA:GetMonster(mission.Client):GetColoredName() .. ".")
+            UI:WaitShowDialogue("Faites revenir un membre de votre équipe à la guilde pour faire de la place à votre client, " .. _DATA:GetMonster(mission.Client):GetColoredName() .. ".")
             local MemberReturnMenu = CreateMemberReturnMenu()
             local menu = MemberReturnMenu:new()
             UI:SetCustomMenu(menu.menu)
             UI:WaitForChoice()
             local member = menu.members[menu.current_item]
-            UI:ChoiceMenuYesNo("Send " .. member:GetDisplayName(true) .. " back to the guild?", false)
+            UI:ChoiceMenuYesNo("Renvoyer " .. member:GetDisplayName(true) .. " à la guilde ?", false)
             UI:WaitForChoice()
 
             local send_home = UI:ChoiceResult()
@@ -1165,7 +1188,7 @@ function COMMON.EnterDungeonMissionCheck(zoneId, segmentID)
         local tbl = LTBL(new_mob)
         tbl.Escort = name
         UI:ResetSpeaker()
-        UI:WaitShowDialogue("Added [color=#00FF00]".. new_mob.Name .."[color] to the party as a guest.")
+        UI:WaitShowDialogue("[color=#00FF00]".. new_mob.Name .."[color] a été ajouté à l'équipe en tant qu'invité.")
       end
     end
   end

@@ -117,13 +117,13 @@ end
 
 function post_office.Main_Desk_Action(obj, activator)
 	local chara = CH('Connect_Owner')
-	GeneralFunctions.StartConversation(chara, "We are still getting set up in here.[pause=0] Please come back again in a later version!")
+	GeneralFunctions.StartConversation(chara, "On est encore en train de s'installer ici.[pause=0] Revenez une prochaine fois !")
 	GeneralFunctions.EndConversation(chara)
 end 
 
 function post_office.Side_Desk_Action(obj, activator)
 	local chara = CH('Rescue_Owner')
-	GeneralFunctions.StartConversation(chara, "We are still getting set up in here.[pause=0] Please come back again in a later version!")
+	GeneralFunctions.StartConversation(chara, "On est encore en train de s'installer ici.[pause=0] Revenez une prochaine fois !")
 	GeneralFunctions.EndConversation(chara)
 end
 

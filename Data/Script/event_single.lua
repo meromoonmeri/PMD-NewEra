@@ -182,7 +182,7 @@ function SINGLE_CHAR_SCRIPT.DestinationFloor(owner, ownerChar, context, args)
 	if not SV.DestinationFloorNotified then
 		if mission.Type == COMMON.MISSION_TYPE_EXPLORATION then
 			UI:ResetSpeaker()
-			UI:WaitShowDialogue("Yes! You've reached the destination! " .. _DATA:GetMonster(mission.Client):GetColoredName().. " seems happy!")
+			UI:WaitShowDialogue("Oui ! Vous avez atteint la destination ! " .. _DATA:GetMonster(mission.Client):GetColoredName().. " semble ravi !")
 			local escort = COMMON.FindMissionEscort(missionNum)
 			if escort then
 				--Clear but remember minimap state
@@ -194,7 +194,7 @@ function SINGLE_CHAR_SCRIPT.DestinationFloor(owner, ownerChar, context, args)
 				UI:SetSpeaker(escort)
 				DUNGEON:CharTurnToChar(escort, GAME:GetPlayerPartyMember(0))
 				DUNGEON:CharTurnToChar(GAME:GetPlayerPartyMember(0), escort)
-				UI:WaitShowDialogue("Thank you for exploring this place with me!")
+				UI:WaitShowDialogue("Merci d'avoir exploré cet endroit avec moi !")
 
 				GAME:WaitFrames(30)		
 				--Set max team size to 4 as the guest is no longer "taking" up a party slot
@@ -207,7 +207,7 @@ function SINGLE_CHAR_SCRIPT.DestinationFloor(owner, ownerChar, context, args)
 		else
 			SOUND:PlayFanfare("Fanfare/Note")
 			UI:ResetSpeaker()
-			UI:WaitShowDialogue("You've reached a destination floor!")
+			UI:WaitShowDialogue("Vous avez atteint un étage de destination !")
 		end
 		SV.DestinationFloorNotified = true
 		GAME:WaitFrames(10)
@@ -363,18 +363,18 @@ function SINGLE_CHAR_SCRIPT.OutlawFloor(owner, ownerChar, context, args)
 		UI:ResetSpeaker()
 		DUNGEON:CharTurnToChar(outlaw, GAME:GetPlayerPartyMember(0))
 		GeneralFunctions.TeamTurnTo(outlaw)
-		UI:WaitShowDialogue("Wanted outlaw spotted!")
+		UI:WaitShowDialogue("Un hors-la-loi recherché en vue !")
 
 		if mission.Type == COMMON.MISSION_TYPE_OUTLAW_FLEE then
 			GAME:WaitFrames(20)
 			UI:SetSpeaker(outlaw)
-			UI:WaitShowDialogue("Waah! A-adventurers! Run for it!")
+			UI:WaitShowDialogue("Aaah ! D-des aventuriers ! Fuyons !")
 			local leaderDir = _DUNGEON.ActiveTeam.Leader.CharDir
 			outlaw.CharDir = leaderDir
 		elseif mission.Type == COMMON.MISSION_TYPE_OUTLAW_MONSTER_HOUSE then
 			GAME:WaitFrames(20)
 			UI:SetSpeaker(outlaw)
-			UI:WaitShowDialogue("You've fallen into my trap!")
+			UI:WaitShowDialogue("Vous êtes tombés dans mon piège !")
 			SOUND:FadeOutBGM(20)
 			GAME:WaitFrames(20)
       
@@ -496,13 +496,13 @@ function SINGLE_CHAR_SCRIPT.OnMonsterHouseOutlawCheck(owner, ownerChar, context,
 			if found_goon and not found_outlaw then
 				GAME:WaitFrames(20)
 				UI:ResetSpeaker()
-				UI:WaitShowDialogue("Yes! You defeated " .. outlaw_name .. "! Defeat the rest of the goons!" )
+				UI:WaitShowDialogue("Oui ! Vous avez vaincu " .. outlaw_name .. "! Vainquez le reste de la bande !" )
 				SV.MonsterHouseMessageNotified = true
 			end
 			if not found_goon and found_outlaw then
 				GAME:WaitFrames(40)
 				UI:SetSpeaker(found_outlaw)
-				UI:WaitShowDialogue("Grr! You won't be able to defeat me!")
+				UI:WaitShowDialogue("Grr ! Vous ne pourrez pas me vaincre !")
 				SV.MonsterHouseMessageNotified = true
 			end
 		end
@@ -513,7 +513,7 @@ function SINGLE_CHAR_SCRIPT.OnMonsterHouseOutlawCheck(owner, ownerChar, context,
 			curr_mission.Completion = 1
 			GAME:WaitFrames(20)
 			UI:ResetSpeaker()
-			UI:WaitShowDialogue("Yes!\nKnocked out outlaw " .. outlaw_name .. " and goons!")
+			UI:WaitShowDialogue("Oui !\nHors-la-loi " .. outlaw_name .. " et sa bande K.O. !")
 			SV.TemporaryFlags.PriorMapSetting = _DUNGEON.ShowMap
 			_DUNGEON.ShowMap = _DUNGEON.MinimapState.None
 			GeneralFunctions.AskMissionWarpOut()
@@ -545,7 +545,7 @@ function SINGLE_CHAR_SCRIPT.OutlawCheck(owner, ownerChar, context, args)
 			curr_mission.Completion = 1
 			GAME:WaitFrames(50)
 			UI:ResetSpeaker()
-			UI:WaitShowDialogue("Yes!\nKnocked out outlaw " .. outlaw_name .. "!")
+			UI:WaitShowDialogue("Oui !\nHors-la-loi " .. outlaw_name .. " K.O. !")
 			--Clear but remember minimap state
 			SV.TemporaryFlags.PriorMapSetting = _DUNGEON.ShowMap
 			_DUNGEON.ShowMap = _DUNGEON.MinimapState.None
@@ -565,7 +565,7 @@ function SINGLE_CHAR_SCRIPT.OutlawItemCheck(owner, ownerChar, context, args)
 			SOUND:PlayBGM(_ZONE.CurrentMap.Music, true)
 			GAME:WaitFrames(50)
 			UI:ResetSpeaker()
-			UI:WaitShowDialogue("Yes!\nYou reclaimed the " .. item_name .. "!")
+			UI:WaitShowDialogue("Oui !\nVous avez récupéré le " .. item_name .. " !")
 			--Clear but remember minimap state
 			SV.TemporaryFlags.PriorMapSetting = _DUNGEON.ShowMap
 			_DUNGEON.ShowMap = _DUNGEON.MinimapState.None
@@ -621,7 +621,7 @@ function SINGLE_CHAR_SCRIPT.MissionGuestCheck(owner, ownerChar, context, args)
 	if tbl ~= nil and tbl.Escort ~= nil then
 		local targetName = _DATA:GetMonster(context.User.BaseForm.Species):GetColoredName()
 		UI:ResetSpeaker()
-		UI:WaitShowDialogue("Oh no! " ..  targetName .. " fainted!")
+		UI:WaitShowDialogue("Oh non ! " ..  targetName .. " s'est évanoui !")
 		GAME:WaitFrames(40)
 		--Set max team size to 4 as the guest is no longer "taking" up a party slot
 		RogueEssence.Dungeon.ExplorerTeam.MAX_TEAM_SLOTS = 4
@@ -791,7 +791,7 @@ function SINGLE_CHAR_SCRIPT.CheckOngoingMissions(owner, ownerChar, context, args
 	for _, mission in ipairs(SV.TakenBoard) do
 		if mission.BackReference ~= COMMON.FLEE_BACKREFERENCE and mission.Taken and mission.Completion == COMMON.MISSION_INCOMPLETE and curr_floor == mission.Floor and curr_zone == mission.Zone and curr_segment == mission.Segment then
 			UI:ResetSpeaker()
-			UI:ChoiceMenuYesNo("You currently have an ongoing mission on this floor.\nDo you still want to proceed?", true)
+			UI:ChoiceMenuYesNo("Vous avez actuellement une mission en cours sur cet étage.\nVoulez-vous quand même continuer ?", true)
 			UI:WaitForChoice()
 			local continue = UI:ChoiceResult()
 			if not continue then
@@ -829,8 +829,8 @@ function SINGLE_CHAR_SCRIPT.SkippedTutorialTeamModeNotification(owner, ownerChar
 	if context.User == nil and SV.Chapter2.SkippedTutorial and not SV.Dojo.SkippedTutorialNotifiedTeamMode then 
 		UI:ResetSpeaker()
 		SOUND:PlayFanfare("Fanfare/Note")
-		UI:WaitShowDialogue("Did you know?[pause=0] You can control each of your party member's actions for a given turn with Team Mode!")
-		UI:WaitShowDialogue("You can toggle Team Mode by pressing " .. STRINGS:LocalKeyString(7) .. ".")
+		UI:WaitShowDialogue("Le saviez-vous ?[pause=0] Vous pouvez contrôler les actions de chaque membre de votre équipe pendant un tour avec le Mode Équipe !")
+		UI:WaitShowDialogue("Vous pouvez activer le Mode Équipe en appuyant sur " .. STRINGS:LocalKeyString(7) .. ".")
 		SV.Dojo.SkippedTutorialNotifiedTeamMode = true
 		GAME:WaitFrames(20)--to prevent mashing making you do an attack after clearing box
 	end
@@ -844,13 +844,13 @@ function SINGLE_CHAR_SCRIPT.RelicForestTutorial(owner, ownerChar, context, args)
     if args.Floor == 1 then
 			if SV.Chapter1.TutorialProgression < 1 then
 				SOUND:PlayFanfare("Fanfare/Note")
-				UI:WaitShowDialogue("Head for the stairs![pause=0] You can attack enemies by pressing " .. STRINGS:LocalKeyString(2) .. ".[pause=0] Enemies don't move or attack until you do.")
-				UI:WaitShowDialogue("Press " .. STRINGS:LocalKeyString(0) .. " to confirm selections or press " .. STRINGS:LocalKeyString(1) .. " to cancel.")
+				UI:WaitShowDialogue("Dirigez-vous vers les escaliers ![pause=0] Vous pouvez attaquer les ennemis en appuyant sur " .. STRINGS:LocalKeyString(2) .. ".[pause=0] Les ennemis ne bougent ni n'attaquent tant que vous n'agissez pas.")
+				UI:WaitShowDialogue("Appuyez sur " .. STRINGS:LocalKeyString(0) .. " pour confirmer ou sur " .. STRINGS:LocalKeyString(1) .. " pour annuler.")
 				SV.Chapter1.TutorialProgression = 1
 				GAME:WaitFrames(20)
 			elseif SV.Chapter1.PartnerMetHero and SV.Chapter1.TutorialProgression < 10 then
 				SOUND:PlayFanfare("Fanfare/Note")
-				UI:WaitShowDialogue("Want to change settings such as controls, battle speed, or window size?[pause=0] Press " .. STRINGS:LocalKeyString(9) .. " and check the Others menu.")
+				UI:WaitShowDialogue("Vous voulez changer les réglages comme les commandes, la vitesse de combat ou la taille de la fenêtre ?[pause=0] Appuyez sur " .. STRINGS:LocalKeyString(9) .. " et vérifiez le menu Autres.")
 				SV.Chapter1.TutorialProgression = 10
 				GAME:WaitFrames(20)
 			end 		
@@ -858,31 +858,31 @@ function SINGLE_CHAR_SCRIPT.RelicForestTutorial(owner, ownerChar, context, args)
     elseif args.Floor == 2 then
 	  	if SV.Chapter1.TutorialProgression < 2 then
 				SOUND:PlayFanfare("Fanfare/Note")
-				UI:WaitShowDialogue("To earn Exp. Points,[pause=10] a Pokémon must use at least one move against a foe,[pause=10] rather than just its basic " .. STRINGS:LocalKeyString(2) .. " attack.")
-				UI:WaitShowDialogue("To use moves,[pause=10] hold " .. STRINGS:LocalKeyString(4) .. ",[pause=10] then press " .. STRINGS:LocalKeyString(21) .. ",[pause=10] " .. STRINGS:LocalKeyString(22) .. ",[pause=10] " .. STRINGS:LocalKeyString(23) .. ",[pause=10] or " .. STRINGS:LocalKeyString(24) .. " to use the corresponding move.")
-				UI:WaitShowDialogue("Alternatively,[pause=10] press " .. STRINGS:LocalKeyString(9) .. " and choose the Moves option or press " .. STRINGS:LocalKeyString(11) .. " to access the Moves menu.")
+				UI:WaitShowDialogue("Pour gagner des Pts d'Exp.,[pause=10] un Pokémon doit utiliser au moins une capacité contre un ennemi,[pause=10] et non seulement son attaque de base avec " .. STRINGS:LocalKeyString(2) .. ".")
+				UI:WaitShowDialogue("Pour utiliser des capacités,[pause=10] maintenez " .. STRINGS:LocalKeyString(4) .. ",[pause=10] puis appuyez sur " .. STRINGS:LocalKeyString(21) .. ",[pause=10] " .. STRINGS:LocalKeyString(22) .. ",[pause=10] " .. STRINGS:LocalKeyString(23) .. ",[pause=10] ou " .. STRINGS:LocalKeyString(24) .. " pour utiliser la capacité correspondante.")
+				UI:WaitShowDialogue("Alternativement,[pause=10] appuyez sur " .. STRINGS:LocalKeyString(9) .. " et choisissez l'option Capacités ou appuyez sur " .. STRINGS:LocalKeyString(11) .. " pour accéder au menu des capacités.")
 				SV.Chapter1.TutorialProgression = 2
 				GAME:WaitFrames(20)
 			elseif SV.Chapter1.PartnerMetHero and SV.Chapter1.TutorialProgression < 9 then
 				SOUND:PlayFanfare("Fanfare/Note")
-				UI:WaitShowDialogue("To view a history of recent actions,[pause=10] press " .. STRINGS:LocalKeyString(10) .. ".")
-				UI:WaitShowDialogue("You can also toggle minimap modes using " .. STRINGS:LocalKeyString(8) .. ",[pause=10] and view the status of your team using " .. STRINGS:LocalKeyString(14) .. ".")
+				UI:WaitShowDialogue("Pour voir l'historique des actions récentes,[pause=10] appuyez sur " .. STRINGS:LocalKeyString(10) .. ".")
+				UI:WaitShowDialogue("Vous pouvez aussi changer les modes de la mini-carte avec " .. STRINGS:LocalKeyString(8) .. ",[pause=10] et voir l'état de votre équipe avec " .. STRINGS:LocalKeyString(14) .. ".")
 				SV.Chapter1.TutorialProgression = 9 
 				GAME:WaitFrames(20)
 			end 
     elseif args.Floor == 3 then
 			if SV.Chapter1.TutorialProgression < 3 then
 				SOUND:PlayFanfare("Fanfare/Note")
-				UI:WaitShowDialogue("You can carry a number of items.[pause=0] Items have a number of various effects and uses.")
-				UI:WaitShowDialogue("To see what items you are carrying,[pause=10] press " .. STRINGS:LocalKeyString(9) .. " and choose the Items option.")
-				UI:WaitShowDialogue("Alternatively,[pause=10] press " .. STRINGS:LocalKeyString(12) .. " to access your items more quickly.") 
+				UI:WaitShowDialogue("Vous pouvez transporter un certain nombre d'objets.[pause=0] Les objets ont divers effets et usages.")
+				UI:WaitShowDialogue("Pour voir les objets que vous transportez,[pause=10] appuyez sur " .. STRINGS:LocalKeyString(9) .. " et choisissez l'option Objets.")
+				UI:WaitShowDialogue("Alternativement,[pause=10] appuyez sur " .. STRINGS:LocalKeyString(12) .. " pour accéder plus rapidement à vos objets.") 
 				SV.Chapter1.TutorialProgression = 3
 				GAME:WaitFrames(20)
 			elseif SV.Chapter1.PartnerMetHero and SV.Chapter1.TutorialProgression < 8 then
 				SOUND:PlayFanfare("Fanfare/Note")
-				UI:WaitShowDialogue("You can hold " .. STRINGS:LocalKeyString(3) .. " to run![pause=0] This doesn't let you travel more distance in a single turn,[pause=10] but helps you navigate faster.")
-				UI:WaitShowDialogue("Hold " .. STRINGS:LocalKeyString(5) .. " and press a direction to look that way without moving or using up your turn.")
-				UI:WaitShowDialogue("You can also hold " .. STRINGS:LocalKeyString(6) .. " to only allow for diagonal movement.")
+				UI:WaitShowDialogue("Vous pouvez maintenir " .. STRINGS:LocalKeyString(3) .. " pour courir ![pause=0] Cela ne vous permet pas de parcourir plus de distance en un seul tour,[pause=10] mais aide à naviguer plus vite.")
+				UI:WaitShowDialogue("Maintenez " .. STRINGS:LocalKeyString(5) .. " et appuyez sur une direction pour regarder sans vous déplacer ni utiliser votre tour.")
+				UI:WaitShowDialogue("Vous pouvez aussi maintenir " .. STRINGS:LocalKeyString(6) .. " pour autoriser uniquement les déplacements en diagonale.")
 				SV.Chapter1.TutorialProgression = 8 
 				GAME:WaitFrames(20)
 			end 
@@ -890,28 +890,28 @@ function SINGLE_CHAR_SCRIPT.RelicForestTutorial(owner, ownerChar, context, args)
 	  	if SV.Chapter1.TutorialProgression < 4 then
 				local apple  = RogueEssence.Dungeon.InvItem("food_apple"):GetDisplayName()
 				SOUND:PlayFanfare("Fanfare/Note")
-				UI:WaitShowDialogue("If you get hungry,[pause=10] eat an " .. apple .. ".[pause=0] If your Belly runs empty,[pause=10] you will slowly lose health until you faint or eat something!")
+				UI:WaitShowDialogue("Si vous avez faim,[pause=10] mangez une " .. apple .. ".[pause=0] Si votre Ventre est vide,[pause=10] vous perdrez lentement de la vie jusqu'à vous évanouir ou manger quelque chose !")
 				SV.Chapter1.TutorialProgression = 4
 				GAME:WaitFrames(20)
 			elseif SV.Chapter1.PartnerMetHero and SV.Chapter1.TutorialProgression < 7 then
 				SOUND:PlayFanfare("Fanfare/Note")
-				UI:WaitShowDialogue("Team members will receive Exp. Points when enemies are defeated.[pause=0] When a teammate gets enough,[pause=10] they will level up!")
-				UI:WaitShowDialogue("A Pokémon will get more HP,[pause=10] higher stats,[pause=10] and possibly a new move each time it levels up.")
-				UI:WaitShowDialogue("Make sure to fight enemies if you want to toughen up!")
+				UI:WaitShowDialogue("Les membres de l'équipe recevront des Pts d'Exp. quand les ennemis sont vaincus.[pause=0] Quand un allié en a assez,[pause=10] il montera de niveau !")
+				UI:WaitShowDialogue("Un Pokémon aura plus de PV,[pause=10] des stats plus élevées,[pause=10] et possiblement une nouvelle capacité à chaque montée de niveau.")
+				UI:WaitShowDialogue("Assurez-vous de combattre des ennemis si vous voulez devenir plus fort !")
 				SV.Chapter1.TutorialProgression = 7 
 				GAME:WaitFrames(20)
 			end
     elseif args.Floor == 5 then
 	  if SV.Chapter1.TutorialProgression < 5 then
 				SOUND:PlayFanfare("Fanfare/Note")
-				UI:WaitShowDialogue("In your travels you may see a black tile with a green arrow.[pause=0] This is known as a Wonder Tile.")
-				UI:WaitShowDialogue("Step on one to reset the stat changes of yourself and anyone nearby.")
+				UI:WaitShowDialogue("Dans vos voyages, vous verrez peut-être une tuile noire avec une flèche verte.[pause=0] C'est ce qu'on appelle une Merveille-Tuile.")
+				UI:WaitShowDialogue("Marchez dessus pour réinitialiser les changements de stats de vous-même et de quiconque est à proximité.")
 				SV.Chapter1.TutorialProgression = 5
 				GAME:WaitFrames(20)
 			elseif SV.Chapter1.PartnerMetHero and SV.Chapter1.TutorialProgression < 6 then
 				SOUND:PlayFanfare("Fanfare/Note")
-				UI:WaitShowDialogue("Watch the HP stats of you and your partner at the top of the screen.[pause=0] If a Pokémon's HP reaches 0,[pause=10] it will faint!")
-				UI:WaitShowDialogue("If either you or your partner faint,[pause=10] you will both be ejected from the dungeon![pause=0] So work together to get through danger!")
+				UI:WaitShowDialogue("Surveillez les PV de vous et votre partenaire en haut de l'écran.[pause=0] Si les PV d'un Pokémon atteignent 0,[pause=10] il s'évanouira !")
+				UI:WaitShowDialogue("Si vous ou votre partenaire vous évanouissez,[pause=10] vous serez tous les deux expulsés du donjon ![pause=0] Alors travaillez ensemble pour traverser le danger !")
 				SV.Chapter1.TutorialProgression = 6 
 				GAME:WaitFrames(20)
     end
